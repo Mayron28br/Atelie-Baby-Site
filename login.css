@@ -1,16 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  color: white;
+  background-color: #d4f8df;
+}
+
+.titulo {
+  width: 50%;
+}
+
 .imagem {
     width: 500px;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: left;
-}
-
-.titulo {
-    
-    height: 200px;
 }
 
 * {
