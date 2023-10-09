@@ -1,17 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 
-@media (max-width: 768px) {
-  .container {
-      padding: 5px;
-  }
-}
-
-container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 10px;
-}
 header {
   position: fixed;
   top: 0;
@@ -50,11 +38,6 @@ header {
   }
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -68,7 +51,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: auto;
 }
 
 .container {
@@ -134,7 +116,7 @@ button[type="submit"] {
   border: none;
   outline: none;
   padding: 8px 0 8px 15px;
-  font-size: 15em;
+  font-size: 15px;
   margin-top: 40px;
   cursor: pointer;
 }
@@ -142,7 +124,7 @@ button[type="submit"] {
 .divCheck {
   margin: 10px 0 0 5px;
   width: 80%;
-  font-size: 13em;
+  font-size: 13px;
 }
 
 #signin {
