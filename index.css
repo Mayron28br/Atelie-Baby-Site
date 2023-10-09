@@ -40,3 +40,9 @@ nav#menu a:hover {
 .sobre {
     background-color: #cdb4db;
 }
+
+footer {
+    color:#cdb4db;
+    display: flex;
+    justify-content: center;
+}
