@@ -109,7 +109,7 @@ form {
   background: transparent;
   border: none;
   position: relative;
-  padding: 10px 29px;
+  padding: 10px 32px;
 }
 
 .btnColor {
@@ -168,9 +168,9 @@ i {
 }
 
 .iPassword {
-  top: 114px;
+  top: 108px;
 }
 
 .iPassword2 {
-  top: 190px;
+  top: 180px;
 }
