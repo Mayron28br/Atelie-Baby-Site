@@ -53,7 +53,7 @@ header {
   /*tamanho da imagen*/
   .imagem{
     height: 35vh;
-    width: 100%;
+    width: 80%;
   }
   .container{
     width: 100%;
