@@ -27,16 +27,6 @@ header {
     align-items: center;
     justify-content: left;
 }
-@media only screen and (max-width: 600px){
-  body{
-    flex-direction: column;
-    width: 100%;
-  }
-  /*tamanho da imagen*/
-  .imagem{
-    height: 40vh;
-  }
-}
 
 * {
   margin: 0;
@@ -51,7 +41,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: auto;
 }
 
 .container {
