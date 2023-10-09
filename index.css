@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 @charset "UTF=8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 
 nav#menu {
     display: block;
@@ -14,7 +14,7 @@ nav#menu ul {
 
 nav#menu li {
     display: inline-block;
-    color: aliceblue;
+    color: #ffafcc;
     padding: 9px;
     margin: 6px;
     transition: background-color 1s;
@@ -35,15 +35,15 @@ nav#menu a:hover {
 }
 
 .inicio {
-    background-color: #cdb4db;
+    background-color: #ffafcc;
 }
 
 .sobre {
-    background-color: #cdb4db;
+    background-color: #ffafcc;
 }
 
 footer {
-    color:#cdb4db;
+    color:#ffafcc;
     display: flex;
     justify-content: center;
 }
