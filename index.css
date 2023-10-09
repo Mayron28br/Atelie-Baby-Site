@@ -46,3 +46,8 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+footer a {
+    display: flex;
+    justify-content: center;
+}
