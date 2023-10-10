@@ -75,7 +75,7 @@ body{
 }
 
 .btn{
-    border: 1px solid #219ebc;
+    border: 1px solid #000000;
     background: none;
     padding: 10px 20px;
     font-size: 15x;
@@ -90,7 +90,7 @@ body{
 }
 
 .btn1:hover{
-    color: black;
+    color: #;
 }
 .btn2:hover{
     color: pink;
@@ -99,7 +99,7 @@ body{
     color: red;
 }
 .btn4:hover{
-    color: yellow;
+    color:white;
 }
 
 .btn::before{
@@ -108,9 +108,22 @@ body{
     left: 0;
     width: 100%;
     height: 0%;
-    background: #219ebc;
+    background: #000000;
     z-index: -1;
     transition: 0.8s;
+}
+/*Cor do Fundo*/
+.btn1::before{
+    background: black;
+}
+.btn2::before{
+    background: blue;
+}
+.btn3::before{
+    background: pink;
+}
+.btn4::before{
+    background: yellow;
 }
 
 .btn1::before,.btn2::before,.btn3::before,.btn4::before{
