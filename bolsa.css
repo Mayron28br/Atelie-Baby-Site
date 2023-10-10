@@ -87,19 +87,20 @@ body{
     transition: 0.8s;
     position: relative;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .btn1:hover{
-    color: #;
+    color: white;
 }
 .btn2:hover{
     color: pink;
 }
 .btn3:hover{
-    color: red;
+    color: purple;
 }
 .btn4:hover{
-    color:white;
+    color: red;
 }
 
 .btn::before{
