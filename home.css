@@ -63,7 +63,7 @@ body {
 
 
 .slider {
-    margin: 0 auto;
+    margin: 200px auto 0; /* Adicione uma margem superior de 80px (ou ajuste conforme necessário) */
     width: 800px;
     height: 400px;
     overflow: hidden;
