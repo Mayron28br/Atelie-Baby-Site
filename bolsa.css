@@ -16,6 +16,9 @@ body{
     padding: 0;
 }
 /*Imagens*/
+main{
+    margin: 115px auto 0;
+}
 
 .container{
     display: flex;
