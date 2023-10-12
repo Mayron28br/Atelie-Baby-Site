@@ -1,7 +1,19 @@
 @charset "UTF=8";
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
-@import url('Header.css'); 
+@import url('Header.css');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap%27');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Roboto:wght@300&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap%27');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Roboto:wght@300&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap%27');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Josefin+Sans:wght@300&family=Roboto:wght@300&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap%27');
+/*
+font-family: 'Dancing Script', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif;
+*/
 * {
     margin: 0;
     padding: 0;
@@ -19,111 +31,38 @@ body {
 /*Slider*/
 
 
-.slider {
-    margin: 200px auto 0; /* Adicione uma margem superior de 80px (ou ajuste conforme necessário) */
-    width: 800px;
-    height: 400px;
-    overflow: hidden;
-}
-
-.slides {
-    width: 400%;
-    height: 400px;
+.container-slider{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 150px auto 0;
 }
 
-.slides input {
-    display: none;
+.swiper{
+    width: 80%;
+    height: fit-content;
+    border-radius: 20px;
+
 }
 
-.slide {
-    width: 25%;
-    position: relative;
-    transition: 5s;
+.swiper-slide img{
+    width: 100%;
 }
 
-.slide img {
-    width: 800px;
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: #ffafcc;
 }
 
-.manualnav {
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn {
-    border: 2px solid #fff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.manual-btn:not(:Last-child) {
-    margin-right: 15px;
-}
-
-.manual-btn:hover {
-    background-color: #fff;
-}
-
-#radio1:checked ~ .first {
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first {
-    margin-left: -25%;
-}
-
-#radio3:checked ~ .first {
-    margin-left: -50%;
-}
-
-#radio4:checked ~ .first {
-    margin-left: -75%;
-}
-
-.navauto div {
-    border: 2px solid #ffafcc;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.navauto {
-    position: absolute;
-    width: 800px;
-    margin-top: 360px;
-    display: flex;
-    justify-content: center;
-}
-
-.navauto div:not(:last-child) {
-    margin-right: 15px;
-}
-
-#radio1:checked ~ .navauto .auto1 {
-    background-color: #fff;
-}
-
-#radio2:checked ~ .navauto .auto2 {
-    background-color: #fff;
-}
-
-#radio3:checked ~ .navauto .auto3 {
-    background-color: #fff;
-}
-
-#radio4:checked ~ .navauto .auto4 {
-    background-color: #fff;
+.swiper .swiper-pagination-bullet-active{
+    background: #ffafcc;
 }
 
 /*Fim Slider*/
 
+/*footer*/
 footer {
     display: flex;
     justify-content: center;
@@ -142,3 +81,5 @@ footer a{
 footer a:hover {
     text-decoration: underline;
 }
+
+/*fim do footer*/

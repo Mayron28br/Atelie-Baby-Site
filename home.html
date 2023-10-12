@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ateliê Baby</title>
     <link rel="stylesheet" type= "text/css" href="home.css"/>
+    <link rel="stylesheet" href="Header.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
 </head>
 <body>
     <header id="home">
         <a href="home.html"><img id="logo" src="img/logo.png" alt="Ateliê Baby" /></a>
         <nav class="navegacao">
             <div class="centralizados">
-                <a href="#">Produtos</a>
+                <a href="bolsa.html">Produtos</a>
                 <a href="#">Galeria</a>
                 <a href="#">Suporte</a>
             </div>
@@ -24,50 +27,52 @@
         <h3>Formas de Pagamento</h3>
     </div> !-->
 <!--Carrossel-->
-<div class="slider">
+<div class="container-slider">
+    <!-- Slider main container -->
+<div class="swiper">
+<!-- Additional required wrapper -->
+<div class="swiper-wrapper">
+<!-- Slides -->
+<div class="swiper-slide"><img src="img/slide1.jpg"></div>
+<div class="swiper-slide"><img src="img/slide2.jpg"></div>
+<div class="swiper-slide"><img src="img/slide3.jpg"></div>
+<div class="swiper-slide"><img src="img/slide4.jpg"></div>
+</div>
+<!-- If we need pagination -->
+<div class="swiper-pagination"></div>
 
-    <div class="slides">
-      <!--Radio Buttons-->
-      <input type="radio" name="radio-btn" id="radio1">
-      <input type="radio" name="radio-btn" id="radio2">
-      <input type="radio" name="radio-btn" id="radio3">
-      <input type="radio" name="radio-btn" id="radio4">
-  <!--Fim Radio Buttons-->
+<!-- If we need navigation buttons -->
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
 
-  <!--Imagens do Slider-->
-  <div class="slide first">
-      <img src="img/slide1.jpg" alt="Imagem 1" />
-  </div>
-  <div class="slide">
-      <img src="img/slide2.jpg" alt="Imagem 2" />
-  </div>
-  <div class="slide">
-      <img src="img/slide3.jpg" alt="Imagem 3" />
-  </div>
-  <div class="slide">
-      <img src="img/slide4.jpg" alt="Imagem 4" />
-  </div>
-  <!--Imagens do Slider-->
-
-  <!--Navegacao automatica-->
-  <div class="navauto">
-      <div class="auto1"></div>
-      <div class="auto2"></div>
-      <div class="auto3"></div>
-      <div class="auto4"></div>
-  </div>
-
-  </div>
-
-<div class="manualnav">
-  <label for="radio1" class="manual-btn"></label>
-  <label for="radio2" class="manual-btn"></label>
-  <label for="radio3" class="manual-btn"></label>
-  <label for="radio4" class="manual-btn"></label>
+<!-- If we need scrollbar -->
+<div class="swiper-scrollbar"></div>
 </div>
 </div>
-<script src="home.js"></script>
-<!--Fim Carrossel-->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+autoplay: {
+delay: 3000,
+disableOnInteraction: false
+},
+loop: true,
+
+pagination: {
+el: '.swiper-pagination',
+clickable: true,
+},
+
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+
+});
+</script>
+
 </body>
 <footer id="foot">
     <p>Copyright &copy; 2023 - por <a href="https://www.instagram.com/codewaylabsbr" target="_blank">CodeWay Labs <br></a>
