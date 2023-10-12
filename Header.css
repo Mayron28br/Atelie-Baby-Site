@@ -1,4 +1,4 @@
-header {
+#home {
     position: fixed;
     top: 0;
     left: 0;
@@ -10,6 +10,18 @@ header {
     z-index: 99;
     color: white;
     background-color: #bde0fe;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+}
+
+.centralizados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
 .navegacao a {
@@ -35,8 +47,7 @@ header {
     transition: transform .5s;
 }
 
-.navegacao a:hover:after {
+.navegacao a:hover::after {
     transform-origin: left;
     transform: scaleX(1);
 }
-/*Fim do NAV*/
