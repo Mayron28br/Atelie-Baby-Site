@@ -11,43 +11,14 @@ font-family: 'Josefin Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Rubik', sans-serif;
 */
+
+/*Boxes*/
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/*Titulo*/
-.titulo {
-    text-align: initial;
-    font-size: 40px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    height: 80px;
-    margin: 0px 90px;
-}
-.titulo hr{
-    margin: 5px 0px;
-}
-/*FIM titulo */
 
-/*Box-preço*/
-
-.container-preço {
-  position: relative;
-  width: 450px;
-  height: 300px;
-  background-color: #bde0fe;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  margin: 0px 90px;
-  align-content: center;
-}
-
-
-/*FIM Box-preço*/
-
-/*Imagens*/
 main{
     margin: 115px auto 0;
 }
@@ -55,7 +26,6 @@ main{
 .container{
     display: flex;
     width: 100%;
-    height: calc(100vh - 85px);
     justify-content: center;
     align-items: center;
 }
@@ -70,6 +40,43 @@ main{
     align-self: flex-end;
 }
 
+.lado-direito {
+    width: 100%;
+}
+/*FIM boxes*/
+
+
+/*Titulo*/
+
+.titulo{
+    text-align: initial;
+    font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    height: 80px;
+    margin: 0px 90px;
+}
+.titulo hr{
+    margin: 5px 0px;
+}
+
+/*FIM titulo*/
+
+/*Box-preço*/
+
+.container-preço {
+  width: 450px;
+  height: 300px;
+  background-color: #bde0fe;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+
+/*FIM Box-preço*/
+
+/*Imagens*/
 .imagem-selecionada {
     max-width: 400px;
 }
@@ -90,10 +97,33 @@ main{
     width: 100%;
     border-radius: 10px;
 }
+/*Fim imagens*/
 
-.lado-direito {
-    width: 100%;
-}
+/*Botão comprar*/
+.comprar {
+    width: fit-content;
+    min-width: 100px;
+    height: 45px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2.5px solid #000;
+    box-shadow: 0px 0px 20px -20px;
+    cursor: pointer;
+    background-color: #ffafcc;
+    transition: all 0.2s ease-in-out 0ms;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .comprar:hover {
+    background-color: #ffc8dd;
+    box-shadow: 0px 0px 20px -18px;
+  }
+  
+  .comprar:active {
+    transform: scale(0.95);
+  }
+/*FIM botão comprar*/
 
 /*Botão de seleção de cor para Tecido*/
 .titulo-tecido{
@@ -235,3 +265,4 @@ main{
     border-color: #ffc8dd;
   }
 /*FIM Botão para escrever personalização*/
+
