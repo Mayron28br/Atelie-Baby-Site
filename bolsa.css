@@ -103,10 +103,25 @@ main{
 
 /*Pacelamento POPUP*/
 
+.fechar-popup{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: black;    
+    color: red;
+    cursor: pointer;
+}
+
+.fechar-popup:hover{
+    background-color: #ddd;
+}
+
 .parcelamento-popup::backdrop{
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px); 
-      
 }
 
 .parcelamento-popup {
@@ -116,19 +131,40 @@ main{
     transform: translate(-50%, -50%);
     background: white;
     padding: 20px;
-    border-radius: 0.5rem;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
     max-width: 80%;
+    border-color: #a2d2ff;
+    border-radius: 10px;
 }
   
 /*FIM Parcelamento POPUP*/
 
 .tabela-parcelamento{
-    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
     width: 100%;
+    text-align: left;
+    margin-top: 25px;
 }
 
-/*FIM popup parcelamento*/
+.tabela-parcelamento th{
+    padding: 15px;
+    background-color: #a2d2ff;
+}
+
+.tabela-parcelamento td{
+    padding: 5px 15px;
+
+}
+
+.tabela-parcelamento tr:nth-child(odd){
+    background-color: #ddd;
+}
+
+.tabela-parcelamento tr:nth-child(even){
+    background-color: white;
+}
+
+/*FIM Tabela popup parcelamento*/
 /*Imagens*/
 .imagem-selecionada {
     max-width: 400px;
