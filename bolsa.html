@@ -50,13 +50,35 @@
                 <div class="lado-direito">
 
                     <h6 class="titulo">Bolsa Maternidade Mala G<hr></h6>
-                    <p class="descriçao">VER DESCRIÇÃO COMPLETA</p>
+                    <a class="descriçao">VER DESCRIÇÃO COMPLETA</a>
 
                     <div class="container-preço">
                         <h1 class="preço">R$ 260,00</h1>
                         <p class="preço-cartao">à vista no Pix com 10% off
                             ou 5x de R$ 59,04 no cartão</p>
+
                         <a class="parcelamento"> Ver parcelamento</a>
+                        <dialog class="parcelamento-popup">
+                            <table class="tabela-parcelamento">
+                                <tr>
+                                    <th>Nº parcela</th> <th>Valor da parcela</th> <th>Total do produto</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td> <td>1x de R$ 295,20 sem juros</td> <td>R$ 295,20</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td> <td>1x de R$ 147,60 sem juros</td> <td>R$ 295,20</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td> <td>1x de R$ 98,40 sem juros</td> <td>R$ 295,20</td>
+                                </tr>
+                            </table>
+
+                            <button class="fechar-popup">X</button>
+                        </dialog>
+                        
+                        <script src="bolsa.js"></script>
+
                         <button class="comprar">Comprar</button>
                     </div>
 
@@ -78,7 +100,7 @@
 
                     <div class="inputGroup">
                         <input type="text" autocomplete="off" maxlength="20" required>
-                        <label for="name">Personalização</label>
+                        <label>Personalização</label>
                     </div>
 
                 </div>

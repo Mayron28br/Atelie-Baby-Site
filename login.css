@@ -37,6 +37,10 @@ header {
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
 }
+.imagem img {
+  max-width: 100%;
+  height: auto;
+}
 
 .imagem {
     width: 500px;
@@ -52,11 +56,11 @@ header {
   }
   /*tamanho da imagen*/
   .imagem{
-    height: 35vh;
-    width: 80%;
+    max-width: 100%;
+    height: auto;
   }
   .container{
-    width: 100%;
+    max-width: 100%;
     height: auto;
   }
 }

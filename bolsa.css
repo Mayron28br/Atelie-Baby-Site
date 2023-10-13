@@ -49,33 +49,86 @@ main{
 /*Titulo*/
 
 .titulo{
-    text-align: initial;
+    text-align: center;
     font-size: 40px;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
-    height: 80px;
+    height: 60px;
     margin: 0px 90px;
+    margin-top: 10px;
 }
 .titulo hr{
     margin: 5px 0px;
 }
 
+.descriçao{
+    text-align: center;
+    height: 80px;
+    margin: 0px 90px;
+}
 /*FIM titulo*/
 
 /*Box-preço*/
 
 .container-preço {
-  width: 450px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
   height: 300px;
   background-color: #bde0fe;
   border-radius: 10px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-
 /*FIM Box-preço*/
 
+/*popup parcelamento*/
+
+/*texto ver parcelamento*/
+.parcelamento {
+    text-decoration: none; 
+    color: #000; 
+    transition: border-bottom 0.3s ease; 
+    border-bottom: 1px solid transparent; 
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+.parcelamento:hover {
+    border-bottom: 1px solid #000; 
+}
+/*FIM texto ver parcelamento*/
+
+/*Pacelamento POPUP*/
+
+.parcelamento-popup::backdrop{
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px); 
+      
+}
+
+.parcelamento-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    max-width: 80%;
+}
+  
+/*FIM Parcelamento POPUP*/
+
+.tabela-parcelamento{
+    border: 1px solid rgb(0, 0, 0);
+    width: 100%;
+}
+
+/*FIM popup parcelamento*/
 /*Imagens*/
 .imagem-selecionada {
     max-width: 400px;
