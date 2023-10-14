@@ -1,8 +1,4 @@
 #home {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
     padding: 10px 30px;
     display: flex;
     justify-content: space-between;
@@ -31,6 +27,7 @@
     text-decoration: none;
     font-weight: 500;
     margin-left: 10px;
+    margin: 0 10px;
 }
 
 .navegacao a::after {

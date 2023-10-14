@@ -23,7 +23,7 @@ main{
     margin: 115px auto 0;
 }
 
-.container{
+.container-top{
     display: flex;
     width: 100%;
     justify-content: center;
@@ -43,6 +43,36 @@ main{
 .lado-direito {
     width: 100%;
 }
+
+.container-mid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #bde0fe;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.lado-esquerdo-mid {
+    flex: 1;
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.lado-direito-mid {
+    flex: 1;
+    padding: 5%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.botton-mid{
+    padding: 20px 5% ;
+    width: 100%;
+    box-sizing: border-box;
+}
 /*FIM boxes*/
 
 
@@ -61,11 +91,6 @@ main{
     margin: 5px 0px;
 }
 
-.descriçao{
-    text-align: center;
-    height: 80px;
-    margin: 0px 90px;
-}
 /*FIM titulo*/
 
 /*Box-preço*/
@@ -102,21 +127,24 @@ main{
 /*FIM texto ver parcelamento*/
 
 /*Pacelamento POPUP*/
+.titulo-parcelamento{
+    font-family: 'Roboto', sans-serif;
+}
 
 .fechar-popup{
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 20px;
     padding: 5px 10px;
     background-color: white;
     border-radius: 5px;
-    border-color: black;    
-    color: red;
+    border-color: #e9ecef;    
+    color: #CED4DA;
     cursor: pointer;
 }
 
 .fechar-popup:hover{
-    background-color: #ddd;
+    background-color: #f8f9fa;
 }
 
 .parcelamento-popup::backdrop{
@@ -138,6 +166,8 @@ main{
 }
   
 /*FIM Parcelamento POPUP*/
+
+/*Tabela parcelamento POPUP*/
 
 .tabela-parcelamento{
     border-collapse: collapse;
@@ -355,3 +385,37 @@ main{
   }
 /*FIM Botão para escrever personalização*/
 
+/*Descrição do Produto*/
+
+.titulo-descriçao{
+    font-size: 24px;
+    font-family:'Rubik', sans-serif;
+    font-weight: 400;
+    color: #6c757d;
+    word-wrap: break-word;
+}
+
+    .descriçao{
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    color: #6c757d;
+    word-wrap: break-word;
+}
+
+.descriçao-link{
+    text-align: center;
+    height: 90px;
+    margin: 0px 90px;
+    text-decoration: none; 
+    color: #000; 
+    transition: border-bottom 0.3s ease; 
+    border-bottom: 1px solid transparent; 
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.descriçao-link:hover{
+    border-bottom: 1px solid #000; 
+}
+
+/*FIM Descrição do Produto*/
