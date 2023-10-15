@@ -38,13 +38,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 25px; /* Adicione um valor de margin-top para posicionar abaixo do cabeçalho */
+    margin-top: 0px; /* Adicione um valor de margin-top para posicionar abaixo do cabeçalho */
 }
 
 /* Remova a largura fixa do carrossel e ajuste a posição */
 .swiper {
     width: 100%;
-    height: 100vh; /* Ajuste a altura para cobrir toda a tela verticalmente */
+    height: 90vh; /* Ajuste a altura para cobrir toda a tela verticalmente */
     border-radius: 0; /* Remova a borda arredondada se não for necessário */
     position: relative; /* Adicione uma posição relativa */
 }
@@ -61,7 +61,7 @@ body {
 @media only screen and (max-width: 600px) {
     .swiper {
         height: 30vh; /* Ajuste a altura para telas menores, se necessário */
-        margin-top: -730px;
+        margin-top: -600px;
     }
 }
 
