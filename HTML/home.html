@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ateliê Baby</title>
-    <link rel="stylesheet" type= "text/css" href="home.css"/>
-    <link rel="stylesheet" href="Header.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" type= "text/css" href="CSS/home.css"/>
+    <link rel="stylesheet" href="CSS/header.css"/>
 </head>
+<script language="javascript" src="JavaScript/home.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <body>
     <header id="home">
         <a href="home.html"><img id="logo" src="img/logo.png" alt="Ateliê Baby" /></a>
@@ -16,7 +18,7 @@
             <div class="centralizados">
                 <a href="bolsa.html">Produtos</a>
                 <a href="galeria.html">Galeria</a>
-                <a href="#">Suporte</a>
+                <a href="#suporte">Suporte</a>
             </div>
             <a class="entrar" href="login.html"><img id="entrar" src="img/entrar.png" alt="login" /></a>
             <a class="carrinho" href="carrinho.html"><img id="carrinho" src="img/carrinho.png" alt="carrinho" /></a>
@@ -53,35 +55,29 @@
             <div class="swiper-scrollbar"></div>
         </div>
     </div>
-    
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-<script>
-    const swiper = new Swiper('.swiper', {
-autoplay: {
-delay: 5000,
-disableOnInteraction: false
-},
-loop: true,
-
-pagination: {
-el: '.swiper-pagination',
-clickable: true,
-},
-
-navigation: {
-nextEl: '.swiper-button-next',
-prevEl: '.swiper-button-prev',
-},
-
-});
-</script>
-
+    <div id="suporte">
+        <h3>Suporte</h3>
+        <br>
+    </div>
 </body>
-<footer id="foot">
-    <p>Copyright &copy; 2023 - por <a href="https://www.instagram.com/codewaylabsbr" target="_blank">CodeWay Labs <br></a>
-    <a href="https://wa.me/5581982569262" target="_blank"><img src="img/whats.png">  WhatsApp</a>
-    <a href="https://www.instagram.com/ateliebaby_2" target="_blank"><img src="img/insta.png">  Instagram</a></p>
+<footer>
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <h1>Logo</h1>
+            <p>Textozinho da empresa</p>
+        </div>
+    </div>
+    <a href="home.html"><img id="logo" src="img/logo.png" alt="Ateliê Baby" /></a><h3>&copy; 2023 Ateliê Baby</h3>
+    <h3>CNPJ:</h3>
+    <ul>Outras Informações
+        <li><a href="pergfreq.html">Perguntas Frequentes</a></li>
+        <li><a href="formpag.html">Formas de Pagamento</a></li>
+        <li><a href="trocas.html">Trocas e devoluções</a></li>
+        <li><a href="frete.html">Frete e entrega</a></li>
+    </ul>
+    <p>Copyright &copy; 2023 - por <a href="https://www.instagram.com/codewaylabsbr" target="_blank">CodeWay Labs</a>
+    <h2>Redes Sociais</h2>
+    <a href="https://wa.me/5581982569262" target="_blank"><img src="img/whats.png"></a>
+    <a href="https://www.instagram.com/ateliebaby_2" target="_blank"><img src="img/insta.png"></a></p>
 </footer>
 </html>
