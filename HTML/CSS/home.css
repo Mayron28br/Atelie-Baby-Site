@@ -44,7 +44,7 @@ body {
 /* Remova a largura fixa do carrossel e ajuste a posição */
 .swiper {
     width: 100%;
-    height: 90vh; /* Ajuste a altura para cobrir toda a tela verticalmente */
+    height: 60vh; /* Ajuste a altura para cobrir toda a tela verticalmente */
     border-radius: 0; /* Remova a borda arredondada se não for necessário */
     position: relative; /* Adicione uma posição relativa */
 }
