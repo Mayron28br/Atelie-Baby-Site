@@ -6,6 +6,9 @@
     <title>Ateliê Baby - Produtos</title>
     <link rel="stylesheet" href="CSS/bolsa.css">
     <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
 </head>
 <body>
     <header id="home">
@@ -110,51 +113,33 @@
         </section>
         <br>
         <section id="outros-produtos">
-            <div class="container-outros-produtos">
+            <br>
+            <div class="linhas-centralizadas">
+                <div class="linha"><hr></div>
                 <h1 class="titulo-outros-produtos">Outros Produtos</h1>
-                <a href="trocador.html" class="card">
-                    <div class="card-img"></div>
-                    <div class="card-infomaçao">
-                      <p class="texto-titulo">Trocador </p>
-                      <p class="texto-body">Product description and details</p>
-                    </div>
-                    <div class="card-footer">
-                      <span class="texto-titulo">R$ 40,00</span>
-                  </div>
-                </a>
-                <a href="trocador.html" class="card">
-                    <div class="card-img"></div>
-                    <div class="card-infomaçao">
-                      <p class="texto-titulo">Trocador </p>
-                      <p class="texto-body">Product description and details</p>
-                    </div>
-                    <div class="card-footer">
-                      <span class="texto-titulo">R$ 40,00</span>
-                  </div>
-                </a>
-                <a href="trocador.html" class="card">
-                    <div class="card-img"></div>
-                    <div class="card-infomaçao">
-                      <p class="texto-titulo">Trocador </p>
-                      <p class="texto-body">Product description and details</p>
-                    </div>
-                    <div class="card-footer">
-                      <span class="texto-titulo">R$ 40,00</span>
-                  </div>
-                </a>
-                <a href="trocador.html" class="card">
-                    <div class="card-img"></div>
-                    <div class="card-infomaçao">
-                      <p class="texto-titulo">Trocador </p>
-                      <p class="texto-body">Product description and details</p>
-                    </div>
-                    <div class="card-footer">
-                      <span class="texto-titulo">R$ 40,00</span>
-                  </div>
-                </a>
-                
+                <div class="linha"><hr></div>
+            </div>
+            
+            <div class="container-outros-produtos swiper">
+                <div class="swiper-wrapper">
+                    <a href="trocador.html" class="card swiper-slide">
+                        <div class="card-img">
+                            <img src="">
+                        </div>
+                        <div class="card-infomaçao">
+                            <p class="texto-titulo">Trocador </p>
+                            <p class="texto-body">Product description and details</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="texto-titulo">R$ 40,00</span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
+
+        <script src="JavaScript/swiper-bundle.min.js"></script>
+        <script src="JavaScript/bolsa.js"></script>
 
         <section id="descriçao">
             <div class="container-descriçao">
@@ -182,7 +167,5 @@
                 </div>
             </div>
         </section><br><br>
-
-    <script src="JavaScript/bolsa.js"></script>
 </body>
 </html>
