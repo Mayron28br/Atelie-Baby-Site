@@ -423,10 +423,6 @@ main{
     padding: 20px;
 }
 
-.slide-conteudo{
-    margin: 0 40px;
-}
-
 .card {
     width: 100%;
     max-width: 260px;
@@ -451,10 +447,7 @@ main{
    }
    
    .card-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ajusta a imagem para cobrir todo o espaço, mantendo a proporção */
-    transition: .3s ease;
+    object-fit: cover;
     border-radius: .5rem;
    }
    
