@@ -423,6 +423,10 @@ main{
     padding: 20px;
 }
 
+.slide-conteudo{
+    margin: 0 40px;
+}
+
 .card {
     width: 100%;
     max-width: 260px;
