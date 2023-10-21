@@ -404,6 +404,37 @@ main{
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
+<<<<<<< HEAD
+=======
+    text-align: center;
+}
+
+.linhas-centralizadas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linha {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #000;
+    margin: 0 10px;
+    max-width: 500px;
+}
+
+.container-outros-produtos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #bde0fe;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px;
+>>>>>>> parent of b1a2797 (swiper outros produtos)
 }
 
 .card {
