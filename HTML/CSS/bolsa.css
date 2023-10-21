@@ -74,18 +74,6 @@ main{
     box-sizing: border-box;
 }
 
-.container-outros-produtos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    background-color: #bde0fe;
-    margin: 20px auto;
-    border-radius: 10px;
-    padding: 20px;
-}
-
 /*FIM boxes*/
 
 
@@ -400,15 +388,44 @@ main{
 /*FIM Botão para escrever personalização*/
 
 /*Outros Produtos*/
+
 .titulo-outros-produtos{
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
+    text-align: center;
+}
+
+.linhas-centralizadas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linha {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #000;
+    margin: 0 10px;
+    max-width: 500px;
+}
+
+.container-outros-produtos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #bde0fe;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .card {
     width: 100%;
-    max-width: 300px;
+    max-width: 260px;
     margin: 10px;
     height: 360px;
     padding: .8em;
@@ -417,6 +434,7 @@ main{
     overflow: visible;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     border-radius: 20px;
+    text-decoration: none;
    }
    
    .card-img {
@@ -425,15 +443,12 @@ main{
     width: 100%;
     border-radius: .5rem;
     transition: .3s ease;
-<<<<<<< HEAD
     object-fit: cover;
    }
    
    .card-img img{
     object-fit: cover;
     border-radius: .5rem;
-=======
->>>>>>> parent of 5c2aaa0 (Outros produtos)
    }
    
    .card-infomaçao {
@@ -459,6 +474,8 @@ main{
     font-weight: 900;
     font-size: 1.2em;
     line-height: 1.5;
+    font-size: 24px;
+    color: black;
    }
    
    .texto-body {
