@@ -77,9 +77,41 @@ body {
     /* Adicione estilos para a navegação, como tamanho e posição, conforme necessário */
 }
 
-
-
 /*Fim Slider*/
+
+/*Texto Inicial*/
+
+.texto-inicial{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #bde0fe;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.lado-esquerdo-inicial {
+    flex: 1;
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.titulo-texto-inicial{
+    font-size: 52px;
+    font-weight: 800;
+}
+
+.texto-inicial-p1{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.lado-direito-inicial{
+    padding: 20px;
+}
+/*FIM Texto Inicial*/
 
 /*Footer*/
 footer {
