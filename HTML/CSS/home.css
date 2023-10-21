@@ -76,23 +76,8 @@ body {
     background: #ffafcc;
     /* Adicione estilos para a navegação, como tamanho e posição, conforme necessário */
 }
- /*Texto inicial*/
- .texto-inicial{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 1200px;
-    background-color: #bde0fe;
-    margin: 20px auto;
-    border-radius: 10px;
- }
 
- .lado-esquerdo-inicio {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-/*FIM Texto inicial*/
+
 
 /*Fim Slider*/
 
