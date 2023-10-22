@@ -16,3 +16,7 @@ const swiper = new Swiper('.swiper', {
     },
     
     });
+
+/*Animaçoes de visibilidade*/
+
+/*FIM animações de visibilidade*/
