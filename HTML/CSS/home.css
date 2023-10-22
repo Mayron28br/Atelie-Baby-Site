@@ -38,46 +38,41 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 0px; /* Adicione um valor de margin-top para posicionar abaixo do cabeçalho */
+    margin-top: 0px;
 }
 
-/* Remova a largura fixa do carrossel e ajuste a posição */
 .swiper {
     width: 100%;
-    height: 60vh; /* Ajuste a altura para cobrir toda a tela verticalmente */
-    border-radius: 0; /* Remova a borda arredondada se não for necessário */
-    position: relative; /* Adicione uma posição relativa */
+    height: 60vh;
+    border-radius: 0;
+    position: relative;
 }
 
-/* Redimensione as imagens para se ajustarem à tela */
 .swiper-slide img {
     width: 100%;
-    height: 100%; /* Ajuste a altura para cobrir toda a tela verticalmente */
-    object-fit: cover; /* Cubra a tela mantendo a proporção da imagem */
-    position: fixed; /* Posição fixa para prender o carrossel no topo */
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
     top: 0;
     left: 0;
 }
 @media only screen and (max-width: 600px) {
     .swiper {
-        height: 30vh; /* Ajuste a altura para telas menores, se necessário */
+        height: 30vh;
         margin-top: -600px;
     }
 }
 
-/* Ajuste o estilo dos botões e da navegação conforme necessário */
 .swiper .swiper-button-prev, .swiper .swiper-button-next {
     color: #ffafcc;
-    /* Adicione estilos para os botões, como tamanho e posição, conforme necessário */
-    top: 50%; /* Ajuste a posição verticalmente, se necessário */
+    top: 50%;
 }
 
 .swiper .swiper-pagination-bullet-active {
     background: #ffafcc;
-    /* Adicione estilos para a navegação, como tamanho e posição, conforme necessário */
 }
 
-/*Fim Slider*/
+/*FIM Slider*/
 
 /*Texto Inicial*/
 section.show-animate .animate{
@@ -258,7 +253,7 @@ section .animate {
 
 /*FIM Texto 4*/
 
-/*Footer*/
+/*Footer
 footer {
     display: flex;
     justify-content: center;
@@ -278,4 +273,87 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/*Fim do Footer*/
+li {
+    
+}
+*/
+
+/*Footer Teste*/
+.container {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    min-height: 250px;
+    background-color: #bde0fe;
+    display: flex;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer ul {
+    width: 320px;
+    min-height: 150px;
+    padding: 20px;
+}
+
+footer ul:nth-child(4) {
+    width: 400px;
+}
+
+ul h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin: 10px 0px;
+    list-style: none;
+}
+
+svg .clock {
+    float: left;
+}
+
+/*footer {
+    background-color: #bde0fe;
+}
+
+footer .container {
+    display: flex;
+    color: white;
+}
+
+footer .container ul {
+    width: 25%;
+}
+
+footer .container h3 {
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+footer .container .social path {
+    margin-right: 10px;
+}
+
+footer .container ul > p {
+    margin-bottom: 40px;
+}
+
+footer .container li {
+    margin: 10px 0;
+}
+
