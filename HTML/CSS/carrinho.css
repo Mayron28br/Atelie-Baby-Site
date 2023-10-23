@@ -1,22 +1,40 @@
-@charset "UTF-8";
+/*Codigos CSS Universais*/
+@charset "UTF=8";
+@import url('Header.css');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
-@import url('Header.css'); 
-
+/*
+font-family: 'Dancing Script', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif;
+*/
 * {
     margin: 0;
     padding: 0;
+    border: none;
+    outline: none;
+    user-select: none;
     box-sizing: border-box;
 }
+
+:root {
+    --cor-primaria: #bde0fe;
+    --cor-secundaria: #ffafcc;
+    --cor-terciaria: #ddd;
+    --cor-fundo: #fff;
+}
+
 body {
-    background-color: rgb(192, 194, 196);
-    margin: 0;
-    padding: 0;
+    min-height: 100.vh;
+    background: var(--cor-fundo);
     width: 100%;
     height: 100vh;
     font-family: Roboto;
 }
 
-/*Carrinho*/
+/*Codigos CSS Universais*/
+
+/*Antigo Carrinho
 main {
     background-color: #fff;
     padding: 150px 30px;
@@ -40,23 +58,36 @@ main .section {
 main .aside {
     background-color: #afffd0;
 }
-/*Fim Carrinho*/
+*/
 
-footer {
+/*Carrinho*/
+.carrinho2 {
+    width: 400px;
+    height: min-content;
+    background: var(--cor-terciaria);
+    padding: 35px;
+}
+
+.carrinho2 .cabecalho {
     display: flex;
-    justify-content: center;
 }
 
-footer a {
-    display: flex;
-    justify-content: center;
+.carrinho2 .cabecalho button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    line-height: 50%;
+    color: var(--cor-primaria);
+    background: #ddddde50;
+    border: 2px solid #ddddde50;
+    border-radius: 8px;
+    transition: .4s;
 }
 
-footer a{
-    color: black;
-    text-decoration: none;
+.carrinho2 .cabecalho button:hover {
+    color: var(--cor-fundo);
+    background: var(--cor-secundaria);
+    border-color: var(--cor-primaria);
 }
-
-footer a:hover {
-    text-decoration: underline;
-}
+/*FIM Carrinho*/
