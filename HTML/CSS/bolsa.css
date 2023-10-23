@@ -387,7 +387,7 @@ main{
     justify-content: center;
     width: 100%;
     max-width: 1200px;
-    background-color: #bde0fe;
+    background-color: #a2d2ff;
     margin: 20px auto;
     border-radius: 10px;
     padding: 20px;
@@ -472,7 +472,8 @@ main{
     flex-wrap: wrap;
     width: 100%;
     max-width: 1200px;
-    background-color: #bde0fe;
+    background-color: whitesmoke;
+    box-shadow: 0 0 20px 0 darkgray;
     margin: 20px auto;
     border-radius: 10px;
 }

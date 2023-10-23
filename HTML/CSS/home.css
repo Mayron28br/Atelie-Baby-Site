@@ -67,6 +67,33 @@ body {
 
 /*FIM Slider*/
 
+/*Mais Informações*/
+.mais-informaçoes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: fff;
+    position: relative;
+    top: -190px;
+}
+.icon {
+    color: #ffafcc;
+    font-size: 38px;
+    margin-right: 10px;
+}
+.mais-informaçoes-icon{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    font-size: 38;
+    font-weight: 600;
+    color: #ffafcc;
+}
+
+
+
+/*FIM Mais Informações
+
 /*Texto Inicial*/
 section.show-animate .animate{
     filter: blur(0);
