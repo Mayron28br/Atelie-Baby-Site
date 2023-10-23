@@ -1,81 +1,146 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 @import url('Header.css');
 /* Estilos para o corpo da página */
-body {
-    background-color: #bde0fe;
-    margin: 0;
-    padding: 0;
+:root {
+    --color-text: navy;
+    --color-bg: papayawhip;
+    --color-bg-accent: #ecdcc0;
+    --size: clamp(10rem, 1rem + 40vmin, 30rem);
+    --gap: calc(var(--size) / 14);
+    --duration: 60s;
+    --scroll-start: 0;
+    --scroll-end: calc(-100% - var(--gap));
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-text: white;
+      --color-bg: #bde0fe; /*cor de fundo*/
+      --color-bg-accent: #ffc8dd; /*cor do funto das imagens SVG*/
+    }
+  }
+
+  
+  body {
+    display: block;
+    align-content: center;
+    overflow: hidden;
+    gap: var(--gap);
     width: 100%;
-    height: 100vh;
-    font-family: Roboto;
-}
-
-/* Estilos para a galeria de produtos */
-.gallery {
+    min-height: 100vh;
+    font-family: system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+  }
+  
+  .marquee {
     display: flex;
-    flex-wrap: wrap;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+    mask-image: linear-gradient(
+      var(--mask-direction, to right),
+      hsl(0 0% 0% / 0),
+      hsl(0 0% 0% / 1) 20%,
+      hsl(0 0% 0% / 1) 80%,
+      hsl(0 0% 0% / 0)
+    );
+  }
+  
+  .marquee__group {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
     justify-content: space-around;
-    padding: 20px;
-    background-color: white;
-}
-
-/* Estilos para os produtos individuais */
-.product {
-    width: 300px;
-    margin: 10px;
-    padding: 15px;
-    border: 1px solid #ffafcc;
-    background-color: #bde0fe;
-    text-align: center;
-    border-radius: 20px;
-}
-
-
-
-.product img {
-    max-width: 100%;
-    border: 1px solid #ffafcc;
-    border-radius: 10px;
-}
-
-.product h3 {
-    color: #ffafcc;
-    font-size: 1.5em;
-    margin: 10px 0;
-}
-
-.product p {
-    color: #333; /* Cor de texto padrão */
-    font-size: 1em;
-}
-/* Estilos para dispositivos móveis */
-@media only screen and (max-width: 600px){
-    .gallery {
-        display: flex;
-        width: 100%;
+    gap: var(--gap);
+    min-width: 100%;
+    animation: scroll-x var(--duration) linear infinite;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .marquee__group {
+      animation-play-state: paused;
     }
-
-    .product {
-        width: 100%; /* Ocupa a largura total da tela */
-        margin: 10px; /* Espaçamento entre produtos */
-        padding: 15px; /* Espaçamento interno dos produtos */
+  }
+  
+  .marquee--vertical {
+    --mask-direction: to bottom;
+  }
+  
+  .marquee--vertical,
+  .marquee--vertical .marquee__group {
+    flex-direction: column;
+  }
+  
+  .marquee--vertical .marquee__group {
+    animation-name: scroll-y;
+  }
+  
+  .marquee--reverse .marquee__group {
+    animation-direction: reverse;
+    animation-delay: -3s;
+  }
+  
+  @keyframes scroll-x {
+    from {
+      transform: translateX(var(--scroll-start));
     }
-    
-    /* Ajustar tamanho da imagem para se encaixar na tela */
-    .product img {
-        width: 100%;
+    to {
+      transform: translateX(var(--scroll-end));
     }
-
-    /* Tamanho da fonte menor para telas menores */
-    .product h3 {
-        font-size: 1.2em;
+  }
+  
+  @keyframes scroll-y {
+    from {
+      transform: translateY(var(--scroll-start));
     }
-
-    .product p {
-        font-size: 0.9em;
+    to {
+      transform: translateY(var(--scroll-end));
     }
+  }
+  
+  /* Estilos de elemento */
+  .marquee svg {
+    display: grid;
+    place-items: center;
+    width: var(--size);
+    fill: var(--color-text);
+    background: var(--color-bg-accent);
+    aspect-ratio: 16/9;
+    padding: calc(var(--size) / 10);
+    border-radius: 0.5rem;
+  }
+  
+  .marquee--vertical svg {
+    aspect-ratio: 1;
+    width: calc(var(--size) / 1.5);
+    padding: calc(var(--size) / 6);
+  }
+  
+ /* Contêiner main */
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    margin: auto;
+    max-width: 100vw;
+  }
+  
+  .wrapper--vertical {
+    flex-direction: row;
+    height: 100vh;
+  }
+  
+  
+  @keyframes fade {
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
 
-}
 
 
 
