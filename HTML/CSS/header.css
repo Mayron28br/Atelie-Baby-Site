@@ -13,14 +13,14 @@
     align-items: center;
 }
 
-.centralizados {
+#centralizados {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
 }
 
-.navegacao a {
+.centralizados a {
     position: relative;
     font-size: 1.1em;
     color: #fff;
@@ -30,7 +30,7 @@
     margin: 0 10px;
 }
 
-.navegacao a::after {
+.centralizados a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -44,7 +44,11 @@
     transition: transform .5s;
 }
 
-.navegacao a:hover::after {
+.centralizados a:hover::after {
     transform-origin: left;
     transform: scaleX(1);
+}
+
+.entrar, .carrinho {
+    margin: 5px;
 }
