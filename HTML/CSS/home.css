@@ -63,7 +63,7 @@ body {
 @media only screen and (max-width: 600px) {
     .swiper {
         height: 30vh;
-        margin-top: -450px;
+        margin-top: -600px;
     }
 }
 
@@ -101,7 +101,7 @@ body {
     color: #ffafcc;
 }
 
-/*FIM Mais Informações
+/*FIM Mais Informações*/
 
 /*Texto Inicial*/
 section.show-animate .animate{
