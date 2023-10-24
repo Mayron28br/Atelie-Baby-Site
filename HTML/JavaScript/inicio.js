@@ -1,13 +1,21 @@
-const button = document.querySelector(".parcelamento");
-const modal = document.querySelector(".parcelamento-popup");
-const buttonclose = document.querySelector(".fechar-popup");
-
-button.onclick = function () {
-    modal.showModal();
-}
-buttonclose.onclick = function () {
-    modal.close();
-};
+const swiper = new Swiper('.swiper', {
+    autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+    },
+    loop: true,
+    
+    pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    },
+    
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+    
+    });
 
 /*Botao Topo*/
 
