@@ -11,9 +11,6 @@ font-family: 'Rubik', sans-serif;
 * {
     margin: 0;
     padding: 0;
-    outline: none;
-    user-select: none;
-    box-sizing: border-box;
 }
 
 :root {
@@ -98,7 +95,7 @@ body {
 }
 
 .container {
-  background-color: whitesmoke;
+  background-color: none;
   padding: 6px;
   width: 350px;
   height: 450px;
@@ -150,6 +147,7 @@ input[type="text"], input[type="password"] {
   padding: 8px 0 8px 35px;
   outline: none;
   width: 100%;
+  background-color: whitesmoke;
 }
 
 button[type="submit"] {
@@ -190,9 +188,9 @@ i {
 }
 
 .iPassword {
-  top: 108px;
+  top: 114px;
 }
 
 .iPassword2 {
-  top: 180px;
+  top: 192px;
 }
