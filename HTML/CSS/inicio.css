@@ -249,36 +249,30 @@ section .animate {
 
 /*FIM texto 3*/
 
-/*Texto 4*/
+/*Botao Topo*/
 
-.texto4 .animate{
-    opacity: 0;
-    transform: scale(.9);
+#botaotopo {
+    display: block;
+    position: fixed;
+    bottom: -50px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    border: 2px solid var(--cor-fundo);
+    cursor: pointer;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    background-image: url('botao.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s;
 }
 
-.texto4.show-animate .animate{
-    opacity: 1;
-    transform: scale(1);
+#botaotopo.active {
+    bottom: 30px;
 }
 
-.texto4 {
-    width: 100%;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 5%;
-
-}
-
-.titulo-texto-t4{
-    font-size: 62px;
-    font-weight: 800;
-    text-align: center;
-}
-
-.texto4-p1{
-    font-size: 34px;
-    font-weight: 500;
-}
-
-/*FIM Texto 4*/
-
+/*FIM Botao Topo*/
