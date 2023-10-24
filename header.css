@@ -52,3 +52,9 @@
 .entrar, .carrinho {
     margin: 5px;
 }
+
+.icon-header{
+    color: #ffafcc;
+    font-size: 28px;
+    margin-right: 10px;
+}
