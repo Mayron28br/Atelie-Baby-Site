@@ -13,7 +13,6 @@ font-family: 'Rubik', sans-serif;
     padding: 0;
     outline: none;
     user-select: none;
-    box-sizing: border-box;
 }
 
 :root {
@@ -104,6 +103,7 @@ main{
 /*Box-preço*/
 
 .container-preço {
+    display: flex;
     align-self: baseline;
     width: 100%;
     max-width: 500px;
@@ -119,12 +119,21 @@ main{
     margin-top: 10px;
 }
 
-.preço{
+.preço {
     align-self: baseline;
     font-size: 38px;
+    margin-bottom: 5px;
 }
 
+.preço-cartao {
+    align-self: baseline;
+    margin-bottom: 5px;
+}
 
+.box-dias{
+    align-self: flex-end;
+    text-align: center;
+}
 /*FIM Box-preço*/
 
 /*popup parcelamento*/
@@ -137,6 +146,8 @@ main{
     border-bottom: 1px solid transparent; 
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
+    align-self: baseline;
+    
 }
 .parcelamento:hover {
     border-bottom: 1px solid #000; 

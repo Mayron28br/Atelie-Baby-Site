@@ -135,7 +135,7 @@ footer .boxs {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px 15px;
+    padding: 10px 10px;
     gap: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
     border-radius: 10px;
