@@ -33,8 +33,8 @@ window.onscroll = function() {
 }
 
 function subirbotao() {
-    var duration = 1000; // Aumentamos a duração para 1000ms para uma animação mais suave
-    var interval = 10; // Intervalo de atualização
+    var duration = 1000;
+    var interval = 10;
 
     var scrollStep = -window.scrollY / (duration / interval);
 
@@ -46,8 +46,6 @@ function subirbotao() {
         }
     }, interval);
 }
-
-// Quando o botão é clicado, chame a função subirbotao
 document.getElementById("botaotopo").addEventListener("click", function() {
     subirbotao();
 });
