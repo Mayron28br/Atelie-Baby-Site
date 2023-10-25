@@ -439,7 +439,6 @@ main{
     background-color: #bde0fe;
     margin: 20px auto;
     border-radius: 10px;
-    padding: 20px;
 }
 
 .titulo-outros-produtos{
@@ -461,19 +460,6 @@ main{
     background-color: #000;
     margin: 0 10px;
     max-width: 500px;
-}
-
-.container-outros-produtos{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
-    max-width: 1200px;
-    background-color: #a2d2ff;
-    margin: 20px auto;
-    border-radius: 10px;
-    padding: 20px;
 }
 
 .card {
