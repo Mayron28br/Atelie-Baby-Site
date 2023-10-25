@@ -121,21 +121,37 @@ main{
     align-self: baseline;
     font-size: 38px;
     margin-bottom: 5px;
+    color: var(--cor-primaria);
 }
 
 .preço-cartao {
     align-self: baseline;
     margin-bottom: 5px;
+    color: var(--cor-primaria);
+}
+
+.box-preço{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: baseline;
+    position: relative;
+    align-self: baseline;
+    top: -70px;
 }
 
 .box-dias{
+    display: flex;
     align-self: flex-end;
     text-align: center;
-    max-width: 100px;
     background: var(--cor-primaria);
     padding: 15px;
     border-radius: 10px;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
 }
+
 /*FIM Box-preço*/
 
 /*popup parcelamento*/
@@ -299,6 +315,7 @@ main{
 }
 
 .personalizaçao-botao{
+    position: relative;
     color: white;
     background: #ffafcc;
     border: 2px solid #a2d2ff;
