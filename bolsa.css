@@ -11,6 +11,7 @@ font-family: 'Rubik', sans-serif;
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -429,92 +430,200 @@ main{
 /*FIM Botão para escrever personalização*/
 
 /*Outros Produtos*/
+.titulo-outros-produtos{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.linhas-centralizadas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linha {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #000;
+    margin: 20px 10px;
+    max-width: 500px;
+}
 
 .outros-produtos{
     display: flex;
     justify-content: center;
     align-items: center;
-    /*height: 100vh;*/
 }
 
 .card-container{
     padding-block: 5rem;
+    width: 1200px;
 }
 
 .card-content{
-    margin-inline: 1.75rem;
-    border-radius: 1.75rem;
-    overflow: hidden;
-}
-
-.card-article{
-    width: 300px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.card-imagem{
-    position: relative;
-    background-color: var(--cor-primaria);
-    padding-top: 1.5rem;
-    margin-bottom: -.75rem;
-}
-
-.card-data{
-    background-color: var(--cor-primaria);
-    padding: 1.25rem 2rem;
+    margin-inline: 1rem;
     border-radius: 1rem;
-    text-align: center;
-    position: relative;
-    z-index: 10;
+    width: 230px;
+    height: 324px;
+    overflow: hidden;
 }
 
-.card-img{
-    width: 10%;
-    height: 10%;
+.card-produto {
+    width: 220px;
+    height: 314px;
+    padding: .8em;
+    background: #f5f5f5;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 10px;
+   }
+   
+   .card-produto-img {
+    background-color: #ffffff;
+    height: 60%;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
+    object-fit: cover;
+   }
+   
+   .card-produto-img img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     transition: .3s ease;
     border-radius: .5rem;
-}
+   }
 
-.card-imagem-sombra{
-    width: 200px;
-    height: 100px;
-    background-color: black;
-}
+   .card-produto-info {
+    padding-top: 10%;
+   }
+   
+   .card-produto-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+   }
+   
+   /*Text*/
+   .card-produto-text-title {
+    font-weight: 900;
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-decoration: none;
+    color: black;
+   }
+   
+   .card-produto-text-body {
+    font-size: .9em;
+    padding-bottom: 10px;
+   }
+   
+   /*Button*/
+   .card-produto-button {
+    border: 1px solid #252525;
+    display: flex;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+   }
+   
+   /*Hover*/
+   
+   .card-produto-button:hover {
+    border: 1px solid var(--cor-primaria);
+    background-color: var(--cor-primaria);
+   }
+
 
 /*FIM Card Produto*/
 
 /*Swiper class*/
-
-.swiper-button-prev::after, 
-.swiper-button-next::after{
+.swiper-button-prev:after,
+.swiper-button-next:after {
     display: none;
 }
 
-.icon-next, .icon-prev{
-    width: initial;
-    height: initial;
-    font-size: 2rem;
-    color: var(--cor-secundaria);
-    display: none;
+.icon-prev,
+.icon-next {
+  width: initial;
+  height: initial;
+  font-size: 2rem;
+  color: var(--cor-secundaria);
+  display: none;
 }
 
-.swiper-button-next{
-    right: 0;
+.swiper-button-prev {
+  left: 0;
 }
 
-.swiper-button-prev{
-    left: 0;
+.swiper-button-next {
+  right: 0;
 }
+
+.swiper-pagination-bullet {
+  background-color: hsl(212, 32%, 40%);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--second-color);
+}
+
 
 .swiper-pagination-bullet{
     background-color: hsl(212, 32%, 40%);
     opacity: 1;
 }
 
-.swiper-pagination
+
 /*FIM Swiper class*/
+
+/*TAMANHO DE TELA SLIDER*/
+
+/*Para celular*/
+@media screen and (max-width: 320px) {
+    .card-data {
+      padding: 1rem;
+    }
+  }
+  
+
+/*para dispositivos medio*/
+
+@media screen and (min-width: 768px) {
+    .card-content {
+      margin-inline: 3rem;
+    }
+  
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: block;
+    }
+  }
+
+/*Para telas grandes*/
+@media screen and (min-width: 1120px) {
+    .card-container {
+      max-width: 1120px;
+    }
+  
+    .swiper-button-prev {
+      left: -1rem;
+    }
+    .swiper-button-next {
+      right: -1rem;
+    }
+  }
+
+/*FIM TAMANHO DE TELA SLIDER */
 
 /*FIM Outros Produtos
 
