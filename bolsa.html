@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ateliê Baby - Produtos</title>
     <link rel="stylesheet" href="bolsa.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
@@ -139,27 +139,101 @@
             </div>
         </section>
         <br>
-        <section id="outros-produtos">
-            <br>
-             <div class="linhas-centralizadas">
-                <div class="linha"><hr></div>
-                <h1 class="titulo-outros-produtos">Outros Produtos</h1>
-                <div class="linha"><hr></div>
-            </div>
+        <br>
+        <div class="linhas-centralizadas">
+           <div class="linha"><hr></div>
+           <h1 class="titulo-outros-produtos">Outros Produtos</h1>
+           <div class="linha"><hr></div>
+       </div>
+        <section id="outros-produtos" class="outros-produtos">
+            <div class="card-container swiper">
+                <div class="card-content">
+                    <div class="swiper-wrapper">
+                        <article class="card-article swiper-slide">
+                            <div class="card-imagem">
+                                <img src="Place Holder.jpg" class="card-img">
+                                <div class="card-imagem-sombra"></div>
+                            </div>
 
-            <div class="container-outros-produtos">
-                <a href="trocador.html" class="card">
-                    <div class="card-img"><img src="" alt=""></div>
-                    <div class="card-infomaçao">
-                      <p class="texto-titulo">Trocador </p>
-                      <p class="texto-body">Product description and details</p>
+                            <div class="card-data">
+                                <h3 class="card-name">Trocador</h3>
+                                <p class="card-descriçao">
+                                    Product description and details
+                                </p>
+                            </div>
+                        </article>
+                        <article class="card-article swiper-slide">
+                            <div class="card-imagem">
+                                <img src="Place Holder.jpg" class="card-img">
+                                <div class="card-imagem-sombra"></div>
+                            </div>
+
+                            <div class="card-data">
+                                <h3 class="card-name">Trocador</h3>
+                                <p class="card-descriçao">
+                                    Product description and details
+                                </p>
+                            </div>
+                        </article>
+                        <article class="card-article swiper-slide">
+                            <div class="card-imagem">
+                                <img src="Place Holder.jpg" class="card-img">
+                                <div class="card-imagem-sombra"></div>
+                            </div>
+
+                            <div class="card-data">
+                                <h3 class="card-name">Trocador</h3>
+                                <p class="card-descriçao">
+                                    Product description and details
+                                </p>
+                            </div>
+                        </article>
+                        <article class="card-article swiper-slide">
+                            <div class="card-imagem">
+                                <img src="Place Holder.jpg" class="card-img">
+                                <div class="card-imagem-sombra"></div>
+                            </div>
+
+                            <div class="card-data">
+                                <h3 class="card-name">Trocador</h3>
+                                <p class="card-descriçao">
+                                    Product description and details
+                                </p>
+                            </div>
+                        </article>
+                        <article class="card-article swiper-slide">
+                            <div class="card-imagem">
+                                <img src="Place Holder.jpg" class="card-img">
+                                <div class="card-imagem-sombra"></div>
+                            </div>
+
+                            <div class="card-data">
+                                <h3 class="card-name">Trocador</h3>
+                                <p class="card-descriçao">
+                                    Product description and details
+                                </p>
+                            </div>
+                        </article>
                     </div>
-                    <div class="card-footer">
-                      <span class="texto-titulo">R$ 40,00</span>
-                  </div>
-                </a>
+                </div>
+
+                <div class="swiper-button-prev">
+                    <i class="fa-solid fa-chevron-left icon-prev"></i>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="fa-solid fa-chevron-right icon-next"></i>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
             </div>
         </section>
+        
+        <script src="swiper-bundle.min.js"></script>
+
+        <script src="slider.js"></script>
+
+        <script src="bolsa.js"></script>
 
         <section id="descriçao">
             <div class="container-descriçao">
@@ -189,8 +263,6 @@
         </section>
         <br>
         <br>
-
-    <script src="bolsa.js"></script>
 
     <!--Footer-->
     <footer class="foo">
