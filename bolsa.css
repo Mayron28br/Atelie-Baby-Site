@@ -103,9 +103,9 @@ main{
 
 .container-preço {
     display: flex;
-    align-self: baseline;
+    align-self: center;
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     margin: 20px ;
     padding: 30px;
     height: auto;
@@ -460,14 +460,12 @@ main{
 .card-container{
     padding-block: 5rem;
     width: 1200px;
+    margin: 10px;
 }
 
 .card-content{
-    margin-inline: 1rem;
-    border-radius: 1rem;
     width: 230px;
     height: 324px;
-    overflow: hidden;
 }
 
 .card-produto {
@@ -556,7 +554,7 @@ main{
   width: initial;
   height: initial;
   font-size: 2rem;
-  color: var(--cor-secundaria);
+  color: var(--cor-primaria);
   display: none;
 }
 
