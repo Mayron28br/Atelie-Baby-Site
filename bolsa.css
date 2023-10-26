@@ -103,9 +103,9 @@ main{
 
 .container-preço {
     display: flex;
-    align-self: center;
+    align-self: baseline;
     width: 100%;
-    max-width: 450px;
+    max-width: 470px;
     margin: 20px ;
     padding: 30px;
     height: auto;
