@@ -99,49 +99,6 @@ body {
 
 /*FIM Mais Informações*/
 
-/*Texto Inicial*/
-section.show-animate .animate{
-    filter: blur(0);
-    opacity: 1;
-}
-
-section .animate {
-    opacity: 0;
-    transition: 1s;
-    filter: blur(5px);
-}
-
-.texto1 .animate{
-    transform: scale(.9);
-}
-
-.texto1.show-animate .animate{
-    transform: scale(1);
-}
-
-.texto1 {
-    width: 100%;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 5%;
-    margin-top: -120px;
-}
-
-.titulo-texto-t1{
-    font-size: 62px;
-    font-weight: 800;
-    text-align: center;
-}
-
-.texto-t1{
-    font-size: 34px;
-    font-weight: 500;
-    text-align: center;
-}
-
-
-/*FIM Texto Inicial*/
-
 /*Produtos Favoritos*/
 
 .produtos-Favoritos{
@@ -159,7 +116,7 @@ section .animate {
     max-width: 1200px;
 }
 
-.titulo-outros-produtos{
+.titulo-produtos-favoritos{
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -267,6 +224,49 @@ section .animate {
 /*FIM Card Produto*/
 
 /*FIM Produtos Favoritos*/
+
+/*Texto1 Inicial*/
+section.show-animate .animate{
+    filter: blur(0);
+    opacity: 1;
+}
+
+section .animate {
+    opacity: 0;
+    transition: 1s;
+    filter: blur(5px);
+}
+
+.texto1 .animate{
+    transform: scale(.9);
+}
+
+.texto1.show-animate .animate{
+    transform: scale(1);
+}
+
+.texto1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 5%;
+    margin-top: -120px;
+}
+
+.titulo-texto-t1{
+    font-size: 62px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.texto-t1{
+    font-size: 34px;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+/*FIM Texto Inicial*/
 
 /*Texto 2*/
 

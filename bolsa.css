@@ -459,13 +459,15 @@ main{
 
 .card-container{
     padding-block: 5rem;
-    width: 1200px;
-    margin: 10px;
+    max-width: 1120px;
 }
 
 .card-content{
-    width: 230px;
-    height: 324px;
+    width: 14.375rem;
+    height: 20.25rem;
+    margin-inline: 1.75rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
 }
 
 .card-produto {

@@ -1,0 +1,174 @@
+@charset "UTF=8";
+@import url('Header.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+/*
+font-family: 'Dancing Script', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif;
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-primaria: #bde0fe;
+    --cor-secundaria: #ffafcc;
+    --cor-fundo: #fff;
+}
+
+body {
+    min-height: 100.vh;
+    background: var(--cor-fundo);
+    width: 100%;
+    height: 100vh;
+    font-family: Roboto;
+}
+
+/*Titulo Produtos*/
+
+.linhas-centralizadas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.titulo-produtos {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.linha {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #000;
+    margin: 20px 10px;
+    max-width: 500px;
+}
+
+/*FIM Titulo Produtos*/
+
+/*Produtos*/
+.produtos {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.Produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    gap: 30px;
+    margin: 40px;
+    margin-top: 30px;
+    height: fit-content;
+}
+
+.produtos-filtro {
+    min-width: 300px;
+    height: auto;
+    background-color: var(--cor-primaria);
+    margin: 30px;
+    margin-left: 80px;
+    border-radius: 20px;
+}
+
+/*FIM Produtos*/
+
+/*Filtros */
+
+
+/*FIM Filtros*/
+
+/*Card Produtos*/
+
+.produtos-Favoritos .animate{
+    transform: translateY(50%);
+    transition-delay: calc(.1s * var(--i));
+    opacity: 1;
+    filter: none;
+}
+
+.produtos-Favoritos.show-animate .animate{
+    transform: translateY(0%);
+}
+
+
+.card-produto {
+    width: 220px;
+    height: 314px;
+    padding: .8em;
+    background: #f5f5f5;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 10px;
+   }
+   
+   .card-produto-img {
+    background-color: #ffffff;
+    height: 60%;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
+    object-fit: cover;
+   }
+   
+   .card-produto-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s ease;
+    border-radius: .5rem;
+   }
+
+   .card-produto-info {
+    padding-top: 10%;
+   }
+   
+   .card-produto-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+   }
+   
+   /*Text*/
+   .card-produto-text-title {
+    font-weight: 900;
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-decoration: none;
+    color: black;
+   }
+   
+   .card-produto-text-body {
+    font-size: .9em;
+    padding-bottom: 10px;
+   }
+   
+   /*Button*/
+   .card-produto-button {
+    border: 1px solid #252525;
+    display: flex;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+   }
+   
+   /*Hover*/
+   
+   .card-produto-button:hover {
+    border: 1px solid var(--cor-secundaria);
+    background-color: var(--cor-secundaria);
+   }
+
+/*FIM card Produtos*/

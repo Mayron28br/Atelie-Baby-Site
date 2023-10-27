@@ -1,15 +1,13 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ateliê Baby</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="header.css"/>
+    <title>Produtos - Ateliê Baby</title>
+    <link rel="stylesheet" href="produtos.css">
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 <body>
     <header id="home">
@@ -35,73 +33,72 @@
         </div>
     </header>
 
-    <!--Botao Topo-->
 
-    <button id="botaotopo" onclick="subirbotao()"></button>
+    <section class="linhas-centralizadas">
+        <div class="linha"><hr></div>
+        <h1 class="titulo-produtos">Produtos</h1>
+        <div class="linha"><hr></div>
+    </section>
 
-    <!--FIM Botao Topo-->
+    <main class="produtos">
 
-    <section class="container-slider">
-        <!-- Slider principal -->
-        <div class="swiper">
-            <!-- Wrapper necessário adicional -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <img src="slide1.jpg" alt="Slide 1">
+        <section class="produtos-filtro">
+        </section>
+
+        <section class="Produtos-container">
+
+            <div class="card-produto animate" style="--i:0;">
+                <div class="card-produto-img"><img src="Place Holder.jpg"></div>
+                <div class="card-produto-info">
+                  <a href="trocador.html" class="card-produto-text-title">Mala Maternidade G </a>
+                  <p class="card-produto-text-body">Product description and details</p>
                 </div>
-                <div class="swiper-slide">
-                    <img src="slide2.jpg" alt="Slide 2">
+                <div class="card-produto-footer">
+                <span class="card-produto-text-title">R$260.00</span>
+                <div class="card-produto-button">
+                  <svg class="svg-icon" viewBox="0 0 20 20"><i class="fa-solid fa-cart-shopping"></i></svg>
                 </div>
-                <div class="swiper-slide">
-                    <img src="slide3.jpg" alt="Slide 3">
-                </div>
-                <div class="swiper-slide">
-                    <img src="slide4.jpg" alt="Slide 4">
-                </div>
+              </div>
             </div>
-            
-            <div class="swiper-pagination"></div>   
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-scrollbar"></div>
-        </div>
-    </section>
-
-    
-
-    <section class="mais-informaçoes">
-        <div class="mais-informaçoes-icon">
-            <i class="fa-brands fa-pix icon" ></i>
-            <p>5% de desconto<br>no Pix</p>
-        </div>
-        
-        <div class="mais-informaçoes-icon">
-            <i class="fa-regular fa-credit-card icon"></i>
-            <p>Parcele no cartão<br>em até 10x</p>
-        </div>
-
-        <div class="mais-informaçoes-icon">
-            <i class="fa-regular fa-heart icon"></i>
-            <p>Produtos exclusivos<br>e personalizados</p>
-        </div>
-
-        <div class="mais-informaçoes-icon">
-            <i class="fa-solid fa-truck icon"></i>
-            <p>Entregamos para<br>todo o Brasil.</p>
-        </div>
-
-    </section>
-
-    <section class="produtos-Favoritos show-animate">
-        <br>
-         <div class="linhas-centralizadas">
-            <div class="linha"><hr></div>
-            <h1 class="titulo-produtos-Favoritos">Produtos Favoritos</h1>
-            <div class="linha"><hr></div>
-        </div>
-
-        <div class="container-produtos-favoritos">
+            <div class="card-produto animate" style="--i:0;">
+                <div class="card-produto-img"><img src="Place Holder.jpg"></div>
+                <div class="card-produto-info">
+                  <a href="trocador.html" class="card-produto-text-title">Mala Maternidade M</a>
+                  <p class="card-produto-text-body">Product description and details</p>
+                </div>
+                <div class="card-produto-footer">
+                <span class="card-produto-text-title">R$200.00</span>
+                <div class="card-produto-button">
+                  <svg class="svg-icon" viewBox="0 0 20 20"><i class="fa-solid fa-cart-shopping"></i></svg>
+                </div>
+              </div>
+            </div>
+            <div class="card-produto animate" style="--i:0;">
+                <div class="card-produto-img"><img src="Place Holder.jpg"></div>
+                <div class="card-produto-info">
+                  <a href="trocador.html" class="card-produto-text-title">Mochila</a>
+                  <p class="card-produto-text-body">Product description and details</p>
+                </div>
+                <div class="card-produto-footer">
+                <span class="card-produto-text-title">R$140.00</span>
+                <div class="card-produto-button">
+                  <svg class="svg-icon" viewBox="0 0 20 20"><i class="fa-solid fa-cart-shopping"></i></svg>
+                </div>
+              </div>
+            </div>
+            <div class="card-produto animate" style="--i:0;">
+                <div class="card-produto-img"><img src="Place Holder.jpg"></div>
+                <div class="card-produto-info">
+                  <a href="trocador.html" class="card-produto-text-title">Mala Quadrada P</a>
+                  <p class="card-produto-text-body">Product description and details</p>
+                </div>
+                <div class="card-produto-footer">
+                <span class="card-produto-text-title">R$100.00</span>
+                <div class="card-produto-button">
+                  <svg class="svg-icon" viewBox="0 0 20 20"><i class="fa-solid fa-cart-shopping"></i></svg>
+                </div>
+              </div>
+            </div>
             <div class="card-produto animate" style="--i:0;">
                 <div class="card-produto-img"><img src="Place Holder.jpg"></div>
                 <div class="card-produto-info">
@@ -115,10 +112,10 @@
                 </div>
               </div>
             </div>
-            <div class="card-produto animate" style="--i:1;">
+            <div class="card-produto animate" style="--i:0;">
                 <div class="card-produto-img"><img src="Place Holder.jpg"></div>
                 <div class="card-produto-info">
-                  <a href="trocador.html" class="card-produto-text-title">Trocador </a>
+                  <a href="trocador.html" class="card-produto-text-title">Porta Documento </a>
                   <p class="card-produto-text-body">Product description and details</p>
                 </div>
                 <div class="card-produto-footer">
@@ -128,23 +125,10 @@
                 </div>
               </div>
             </div>
-            <div class="card-produto animate" style="--i:2;">
-                <div class="card-produto-img "><img src="Place Holder.jpg"></div>
-                <div class="card-produto-info">
-                  <a href="trocador.html" class="card-produto-text-title">Trocador </a>
-                  <p class="card-produto-text-body">Product description and details</p>
-                </div>
-                <div class="card-produto-footer">
-                <span class="card-produto-text-title">R$40.00</span>
-                <div class="card-produto-button">
-                  <svg class="svg-icon" viewBox="0 0 20 20"><i class="fa-solid fa-cart-shopping"></i></svg>
-                </div>
-              </div>
-            </div>
-            <div class="card-produto animate" style="--i:3;">
+            <div class="card-produto animate" style="--i:0;">
                 <div class="card-produto-img"><img src="Place Holder.jpg"></div>
                 <div class="card-produto-info">
-                  <a href="trocador.html" class="card-produto-text-title">Trocador </a>
+                  <a href="trocador.html" class="card-produto-text-title">Frasqueira </a>
                   <p class="card-produto-text-body">Product description and details</p>
                 </div>
                 <div class="card-produto-footer">
@@ -154,51 +138,74 @@
                 </div>
               </div>
             </div>
-        </div>
-    </section>
+            <div class="card-produto animate" style="--i:0;">
+                <div class="card-produto-img"><img src="Place Holder.jpg"></div>
+                <div class="card-produto-info">
+                  <a href="trocador.html" class="card-produto-text-title">Porta Chupeta </a>
+                  <p class="card-produto-text-body">Product description and details</p>
+                </div>
+                <div class="card-produto-footer">
+                <span class="card-produto-text-title">R$40.00</span>
+                <div class="card-produto-button">
+                  <svg class="svg-icon" viewBox="0 0 20 20"><i class="fa-solid fa-cart-shopping"></i></svg>
+                </div>
+              </div>
+            </div>
+            <div class="card-produto animate" style="--i:0;">
+                <div class="card-produto-img"><img src="Place Holder.jpg"></div>
+                <div class="card-produto-info">
+                  <a href="trocador.html" class="card-produto-text-title">Saquinho </a>
+                  <p class="card-produto-text-body">Product description and details</p>
+                </div>
+                <div class="card-produto-footer">
+                <span class="card-produto-text-title">R$40.00</span>
+                <div class="card-produto-button">
+                  <svg class="svg-icon" viewBox="0 0 20 20"><i class="fa-solid fa-cart-shopping"></i></svg>
+                </div>
+              </div>
+            </div>
+            <div class="card-produto animate" style="--i:0;">
+                <div class="card-produto-img"><img src="Place Holder.jpg"></div>
+                <div class="card-produto-info">
+                  <a href="trocador.html" class="card-produto-text-title">Kit 2 Peças </a>
+                  <p class="card-produto-text-body">Product description and details</p>
+                </div>
+                <div class="card-produto-footer">
+                <span class="card-produto-text-title">R$40.00</span>
+                <div class="card-produto-button">
+                  <svg class="svg-icon" viewBox="0 0 20 20"><i class="fa-solid fa-cart-shopping"></i></svg>
+                </div>
+              </div>
+            </div>
+            <div class="card-produto animate" style="--i:0;">
+                <div class="card-produto-img"><img src="Place Holder.jpg"></div>
+                <div class="card-produto-info">
+                  <a href="trocador.html" class="card-produto-text-title">Kit 3 Peças</a>
+                  <p class="card-produto-text-body">Product description and details</p>
+                </div>
+                <div class="card-produto-footer">
+                <span class="card-produto-text-title">R$40.00</span>
+                <div class="card-produto-button">
+                  <svg class="svg-icon" viewBox="0 0 20 20"><i class="fa-solid fa-cart-shopping"></i></svg>
+                </div>
+              </div>
+            </div>
+            <div class="card-produto animate" style="--i:0;">
+                <div class="card-produto-img"><img src="Place Holder.jpg"></div>
+                <div class="card-produto-info">
+                  <a href="trocador.html" class="card-produto-text-title">Kit Completo</a>
+                  <p class="card-produto-text-body">Product description and details</p>
+                </div>
+                <div class="card-produto-footer">
+                <span class="card-produto-text-title">R$40.00</span>
+                <div class="card-produto-button">
+                  <svg class="svg-icon" viewBox="0 0 20 20"><i class="fa-solid fa-cart-shopping"></i></svg>
+                </div>
+              </div>
+            </div>
+        </section>
+    </main>
 
-    <section class="texto1 show-animate">
-
-            <h2 class="titulo-texto-t1 animate">Bem-Vindo<br>Ao Mundo da Personalização</h2>
-            <br>
-            <p class="texto-t1 animate">Bem-vindo ao nosso mundo de bolsas maternidade personalizadas.<br> Aqui, você é o designer e criador de sua própria bolsa de maternidade única. Oferecemos uma variedade de opções para tornar sua bolsa perfeita para você e seu bebê.</p>
-
-    </section>
-
-    <section class="texto2 show-animate">
-
-        <div class="lado-esquerdo-t2 animate">
-            <h2 class="titulo-texto-t2 animate" style="--i:0;">Personalize<br>Seu Kit Maternidade</h2>
-            <br>
-            <p class="texto2-p1 animate" style="--i:1;">
-                <b>Escolha a Cor do Courano:</b> Comece escolhendo a cor do couro que melhor combina com seu estilo. Temos uma ampla gama de cores, desde tons clássicos até cores vibrantes.
-            </p>
-            <br>
-            <p class="texto2-p1 animate" style="--i:2;">
-                <b>Cor da Fita e Alças:</b> Agora, é hora de adicionar o toque pessoal. Selecione a cor da fita e das alças que complementam a cor do couro. Misture e combine para criar uma combinação única.
-            </p>
-            <br>
-            <p class="texto2-p1 animate" style="--i:3;">
-                <b>Nome Bordado:</b> Oferecemos a oportunidade de personalizá-la com um nome bordado de maneira única. Escolha o nome do seu bebê e tenha a liberdade de selecionar uma fonte e até mesmo adicionar detalhes especiais ao design
-            </p>
-        </div>
-        <div class="lado-direito-t2 animate">
-            <img class="centered-img animate" src="Place Holder.jpg" style="--i:0;">
-            <img class="centered-img animate" src="Place Holder.jpg" style="--i:1;">
-        </div>
-
-    </section>
-
-    <section class="texto3 show-animate">
-
-            <h2 class="titulo-texto-t3 animate">Qualidade e Estilo Inigualáveis</h2>
-            <br>
-            <p class="texto3-p1 animate">
-                Nossas bolsas maternidade são feitas com os mais altos padrões de qualidade. Cada detalhe é cuidadosamente confeccionado para garantir durabilidade e elegância. Nós entendemos que a maternidade é uma jornada especial, e nossa missão é fornecer uma bolsa que seja tão única quanto a sua experiência.
-            </p>
-
-    </section>
-    <!--Footer-->
     <footer class="foo">
         <div class="boxs">
             <ul>
@@ -241,10 +248,6 @@
                   </li>
             </ul>
         </div>
-    </footer>
-    <!--FIM Footer-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="inicio.js"></script>
-    <script src="animacoes.js"></script>
+    </footer>    
 </body>
 </html>
