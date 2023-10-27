@@ -217,8 +217,8 @@ body {
    /*Hover*/
    
    .card-produto-button:hover {
-    border: 1px solid var(--cor-primaria);
-    background-color: var(--cor-primaria);
+    border: 1px solid var(--cor-secundaria);
+    background-color: var(--cor-secundaria);
    }
 
 /*FIM Card Produto*/
