@@ -103,6 +103,7 @@ main{
 
 .container-preço {
     display: flex;
+    flex-wrap: wrap;
     align-self: baseline;
     width: 100%;
     max-width: 470px;
@@ -298,32 +299,43 @@ main{
     display: none;
 }
 
-#mostrar-personalizaçao:checked ~ .container-personalizaçao{
+#mostrar-personalizaçao:checked ~ .container-personalizaçao-seleçao {
     display: none;
 }
 
-#mostrar-personalizaçao:checked ~ .container-personalizaçao {
+#mostrar-personalizaçao:checked ~ .container-personalizaçao-seleçao {
     display: block;
 }
 
-.container-personalizaçao{
+.container-personalizaçao-seleçao{
     display: none;
+}
+
+.container-personalizaçao{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    top: -60px;
 }
 
 .personalizaçao-botao {
     display: inline-block;
     cursor: pointer;
+    text-align: center;
 }
 
 .personalizaçao-botao{
-    position: relative;
-    color: white;
-    background: #ffafcc;
-    border: 2px solid #a2d2ff;
-    padding: 10px 23px;
+    padding: 10px 24px;
     border-radius: 10px;
     margin: 12px;
     user-select: none;
+    max-height: 44px;
+    color: white;
+    background: #ffafcc;
+    border: 1px solid darkgray;
+    box-shadow: 0 0 5px 0 darkgray;
 }
 
 .personalizaçao-botao:hover {
@@ -426,8 +438,116 @@ main{
 
 /*Botão escrever pesonalização*/
 
+.nome{
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+}
+
+.input {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: var(--cor-secundaria);
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+  }
+  
+  .input:focus {
+    background-color: #ffc8dd;
+    transform: scale(1.05);
+    
+  }
 
 /*FIM Botão para escrever personalização*/
+
+/*Seleção de bordado*/
+.radio-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .radio-inputs > * {
+    margin: 6px;
+  }
+  
+  .radio-input:checked + .radio-tile {
+    border-color: var(--cor-secundaria);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    color: var(--cor-secundaria);
+  }
+  
+  .radio-input:focus + .radio-tile {
+    border-color: var(--cor-secundaria);
+  }
+
+  
+  .radio-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    min-height: 80px;
+    border-radius: 0.5rem;
+    border: 2px solid var(--cor-primaria);
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.15s ease;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .radio-tile:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0.75rem;
+    height: 0.75rem;
+    border: 2px solid #b5bfd9;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 0.25rem;
+    left: 0.25rem;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.25s ease;
+  }
+  
+  .radio-tile:hover {
+    border-color: var(--cor-secundaria);
+  }
+  .radio-icon img {
+    width: 4rem;
+    height: 4rem;
+    fill: #494949;
+  }
+  
+  .radio-label {
+    color: #707070;
+    transition: 0.375s ease;
+    text-align: center;
+    font-size: 13px;
+  }
+  
+  .radio-input {
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+/*FIM Seleção de bordado*/
 
 /*Outros Produtos*/
 .titulo-outros-produtos{

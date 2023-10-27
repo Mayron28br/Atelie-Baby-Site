@@ -6,7 +6,7 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    rootMargin: '200px', // Área de ativação
+    rootMargin: '400px', // Área de ativação
 });
 
 const hiddenElements = document.querySelectorAll('.hidden');
