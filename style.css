@@ -56,12 +56,6 @@ body {
     top: 0;
     left: 0;
 }
-@media only screen and (max-width: 600px) {
-    .swiper {
-        height: 30vh;
-        margin-top: -600px;
-    }
-}
 
 .swiper .swiper-button-prev, .swiper .swiper-button-next {
     color: #ffafcc;
@@ -401,3 +395,10 @@ section .animate {
 }
 
 /*FIM Botao Topo*/
+
+@media only screen and (max-width: 600px) {
+    .swiper {
+        height: 30vh;
+        margin-top: -600px;
+    }
+}
