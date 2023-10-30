@@ -21,12 +21,26 @@
         </div>
     
         <!-- Parte da Navegação Centralizada -->
-        <nav><div class="centralizados">
-            <a href="index.html">INÍCIO</a>
-            <a href="produtos.html">PRODUTOS</a>
-            <a href="galeria.html">GALERIA</a>
-            <a href="#suporte">SUPORTE</a>
-        </div></nav>
+        <div class="accordion">
+            <div class="bar">
+                <button class="toggle" onclick="openModal('modal1')"></button>
+            </div>
+        </div>
+    
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal1')">&times;</span>
+                <div class="header"></div>
+                <nav>
+                    <div class="centralizados">
+                        <a href="index.html">INÍCIO</a>
+                        <a href="produtos.html">PRODUTOS</a>
+                        <a href="galeria.html">GALERIA</a>
+                        <a href="#suporte">SUPORTE</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
     
         <!-- Parte dos Links "Entrar" e "Carrinho" -->
         <div class="entrar-carrinho-container">
