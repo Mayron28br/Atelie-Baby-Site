@@ -76,6 +76,7 @@ body {
     background-color: fff;
     position: relative;
     top: -190px;
+    flex-wrap: wrap;
 }
 .icon {
     color: #ffafcc;
