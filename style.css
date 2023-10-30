@@ -400,6 +400,9 @@ section .animate {
     .close {
         display: none;
     }
+    .toggle {
+        display: none;
+    }
 }
 /*FIM Botao Topo*/
 
