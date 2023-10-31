@@ -293,6 +293,7 @@ section.show-carrinho .carrinho-aba{
     max-width: 1200px;
     overflow: hidden;
     flex-wrap: wrap;
+    height: 400px;
 }
 
 .titulo-produtos-favoritos{
