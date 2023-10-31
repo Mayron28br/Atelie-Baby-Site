@@ -46,8 +46,41 @@
         <div class="entrar-carrinho-container">
             <a class="entrar" href="login.html"><i class="fa-solid fa-user icon-header"></i></a>
             <a class="carrinho" href="carrinho.html"><i class="fa-solid fa-cart-shopping icon-header"></i></a>
+            <span class="numero-itens-carrinho">0</span>
         </div>
     </header>
+
+
+    <section class="show-carrinho">
+        <div class="carrinho-aba">
+            <h1 class="carrinho-titulo">Carrinho</h1>
+            <div class="carrinho-lista">
+                <div class="items">
+                    <div class="imagem-item">
+                        <img src="Place Holder.jpg">
+                    </div>
+                    <div class="name-item">nome</div>
+                    <div class="preço-total-item">R$ 200</div>
+                    <div class="quantidade-item">
+                        <span class="menos-item"><</span>
+                        <span>1</span>
+                        <span class="mais-item">></span>
+                    </div>
+                </div>
+            </div>
+    
+            <button class="carrinho-botao-fechar">X</button>
+    
+            <div class="carrinho-botao-comprar">
+                <div class="carrinho-botao-comprar-wrapper">
+                    <div class="texto-carrinho-botao">Finalizar Compra</div>
+                    <span class="icon-carrinho"> <i class="fa-solid fa-cart-shopping icon-carrinho-botao"></i> </span>
+                </div>
+            </div>        
+                    
+        </div>
+    </section>
+    
 
     <!--Botao Topo-->
 
@@ -116,7 +149,7 @@
         </div>
 
         <div class="container-produtos-favoritos">
-            <div class="card-produto hidden" style="--i:0;">
+            <div class="card-produto hidden" data-id="1" style="--i:0;">
                 <div class="card-produto-img"><a href="bolsa.html"><img src="Place Holder.jpg"></a></div>
                 <div class="card-produto-info">
                   <a href="bolsa.html" class="card-produto-text-title">Bolsa Mala G </a>
@@ -127,9 +160,9 @@
                 <div class="card-produto-button">
                   <svg class="svg-icon" viewBox="0 0 20 20"><i class="fa-solid fa-cart-shopping"></i></svg>
                 </div>
-              </div>
+                </div>
             </div>
-            <div class="card-produto hidden" style="--i:1;">
+            <div class="card-produto hidden" data-id="2" style="--i:1;">
                 <div class="card-produto-img"><img src="Place Holder.jpg"></div>
                 <div class="card-produto-info">
                   <a href="trocador.html" class="card-produto-text-title">Trocador </a>
@@ -142,7 +175,7 @@
                 </div>
               </div>
             </div>
-            <div class="card-produto hidden" style="--i:2;">
+            <div class="card-produto hidden" data-id="3" style="--i:2;">
                 <div class="card-produto-img "><img src="Place Holder.jpg"></div>
                 <div class="card-produto-info">
                   <a href="trocador.html" class="card-produto-text-title">Trocador </a>
@@ -155,7 +188,7 @@
                 </div>
               </div>
             </div>
-            <div class="card-produto hidden" style="--i:3;">
+            <div class="card-produto hidden" data-id="4" style="--i:3;">
                 <div class="card-produto-img"><img src="Place Holder.jpg"></div>
                 <div class="card-produto-info">
                   <a href="trocador.html" class="card-produto-text-title">Trocador </a>

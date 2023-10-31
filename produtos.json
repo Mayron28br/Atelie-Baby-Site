@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Bolsa Mala G",
+        "price": 200,
+        "imagem": "Place Holder.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Trocador",
+        "price": 40,
+        "imagem": "Place Holder.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Mochila",
+        "price": 100,
+        "imagem": "Place Holder.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Kit 3 peças",
+        "price": 300,
+        "imagem": "Place Holder.jpg"
+    }
+]

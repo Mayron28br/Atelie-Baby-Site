@@ -65,6 +65,18 @@
     margin-right: 10px;
 }
 
+.numero-itens-carrinho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 20px;
+    border-radius: 50%;
+    top: -40px;
+    right: -86px;
+    background-color: var(--cor-secundaria);
+}
+
 @media only screen and (max-width: 600px) {
     .logo-container {
         display: none;
