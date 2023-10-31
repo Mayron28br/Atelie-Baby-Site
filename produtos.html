@@ -42,9 +42,17 @@
 
     <main class="produtos">
 
-        <section class="produtos-filtro">
-
-        </section>
+      <section class="produtos-filtro">
+        <h2>Filtros</h2>
+        <form>
+            <p>Cor do bordado:</p>
+            <label for="cor1"><input type="checkbox" id="cor1" name="azul" value="azul">Azul</label>
+            <label for="cor2"><input type="checkbox" id="cor2" name="rosa" value="rosa">Rosa</label>
+            <label for="cor3"><input type="checkbox" id="cor3" name="verde" value="verde">Verde</label>
+            <label for="cor4"><input type="checkbox" id="cor4" name="amarelo" value="amarelo">Amarelo</label>
+        </form>
+    </section>
+    
 
         <section class="Produtos-container show">
 
@@ -101,7 +109,7 @@
               </div>
             </div>
             <div class="card-produto hidden" style="--i:4;">
-                <div class="card-produto-img"><img src="Place Holder.jpg"></div>
+                <div class="card-produto-img"><img src="Place Holder.jpg">produtos-filtro</div>
                 <div class="card-produto-info">
                   <a href="trocador.html" class="card-produto-text-title">Trocador </a>
                   <p class="card-produto-text-body">Product description and details</p>
