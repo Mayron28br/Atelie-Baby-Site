@@ -584,12 +584,6 @@ section.show-carrinho .carrinho-aba{
     bottom: 30px;
 }
 @media only screen and (min-width: 769px) {
-    .close {
-        display: none;
-    }
-    .toggle {
-        display: none;
-    }
     .container-produtos-favoritos{
         height: 400px;
     }
@@ -598,10 +592,6 @@ section.show-carrinho .carrinho-aba{
 /*FIM Botao Topo*/
 
 @media only screen and (max-width: 600px) {
-    .swiper {
-        height: 30vh;
-        margin-top: -440px;
-    }
     .mais-informaçoes{
         margin-top: -200px;
         display: grid;
