@@ -599,7 +599,12 @@ section.show-carrinho .carrinho-aba{
         grid-gap: 10px; /* Espaçamento entre os itens */
     }
     .container-produtos-favoritos{
-        margin-top: 5px;
+        height: 1400px;
+    }
+    .imagems-personalizaçao {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas com largura igual */
+        grid-gap: 10px; /* Espaçamento entre os itens */
     }
 }
 
