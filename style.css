@@ -254,12 +254,13 @@ section.show-carrinho .carrinho-aba{
 /*Mais Informações*/
 .mais-informaçoes{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     background-color: fff;
     position: relative;
     top: -190px;
-    flex-wrap: wrap;
+    overflow: hidden;
+    border: 1px solid #ccc;
 }
 .icon {
     color: #ffafcc;
@@ -603,6 +604,9 @@ section.show-carrinho .carrinho-aba{
     }
     .mais-informaçoes{
         margin-top: -200px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas com largura igual */
+        grid-gap: 10px; /* Espaçamento entre os itens */
     }
     .container-produtos-favoritos{
         margin-top: 5px;

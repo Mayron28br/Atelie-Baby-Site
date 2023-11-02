@@ -13,22 +13,42 @@
 <body>
   <!--Navegaçao-->
   <header id="home">
+    <!-- Parte do Logo -->
     <div class="logo-container">
-      <a href="index.html"><img id="logo" src="logo.png" alt="Ateliê Baby"/></a>
+        <a href="index.html">
+            <img id="logo" src="logo.png" alt="Ateliê Baby" />
+        </a>
     </div>
-    <nav>
-      <div class="centralizados">
-        <a href="index.html">INÍCIO</a>
-        <a href="bolsa.html">PRODUTOS</a>
-        <a href="galeria.html">GALERIA</a>
-        <a href="#suporte">SUPORTE</a>
-      </div>
-    </nav>
+
+    <!-- Parte da Navegação Centralizada -->
+    <div class="accordion">
+        <div class="bar">
+            <button class="toggle" onclick="openModal('modal1')"></button>
+        </div>
+    </div>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <div class="header"></div>
+            <nav>
+                <div class="centralizados">
+                    <a href="index.html">INÍCIO</a>
+                    <a href="produtos.html">PRODUTOS</a>
+                    <a href="galeria.html">GALERIA</a>
+                    <a href="#suporte">SUPORTE</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Parte dos Links "Entrar" e "Carrinho" -->
     <div class="entrar-carrinho-container">
         <a class="entrar" href="login.html"><i class="fa-solid fa-user icon-header"></i></a>
         <a class="carrinho" href="carrinho.html"><i class="fa-solid fa-cart-shopping icon-header"></i></a>
+        <span class="numero-itens-carrinho">0</span>
     </div>
-  </header>
+</header>
   <!--FIM Navegaçao-->
 
   <!--Botao Topo-->
