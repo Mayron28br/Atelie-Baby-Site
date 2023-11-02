@@ -421,7 +421,7 @@ section.show-carrinho .carrinho-aba{
     opacity: 1;
     filter: blur(0);
     transform: translateY(0%);
-    transition: 1s;
+    transition: 1.5s;
     transition-delay: calc(.1s * var(--i));
 }
 

@@ -41,7 +41,12 @@ font-family: 'Rubik', sans-serif;
     }
   }
 
-  
+  .galeria img{
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
   
   .marquee {
     display: flex;
