@@ -2,24 +2,42 @@
     {
         "id": 1,
         "name": "Bolsa Mala G",
+        "descriçao": "essa é a descrição",
         "price": 200,
         "imagem": "Place Holder.jpg"
     },
     {
         "id": 2,
         "name": "Trocador",
+        "descriçao": "essa é a descrição",
         "price": 40,
         "imagem": "Place Holder.jpg"
     },
     {
         "id": 3,
         "name": "Mochila",
+        "descriçao": "essa é a descrição",
         "price": 100,
         "imagem": "Place Holder.jpg"
     },
     {
         "id": 4,
+        "name": "Porta Chupeta",
+        "descriçao": "essa é a descrição",
+        "price": 300,
+        "imagem": "Place Holder.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Porta Documento",
+        "descriçao": "essa é a descrição",
+        "price": 300,
+        "imagem": "Place Holder.jpg"
+    },
+    {
+        "id": 6,
         "name": "Kit 3 peças",
+        "descriçao": "essa é a descrição",
         "price": 300,
         "imagem": "Place Holder.jpg"
     }

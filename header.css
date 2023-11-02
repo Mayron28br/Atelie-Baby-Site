@@ -75,6 +75,7 @@
     top: -40px;
     right: -86px;
     background-color: var(--cor-secundaria);
+    padding: 2px;
 }
 
 @media only screen and (max-width: 600px) {
