@@ -51,19 +51,46 @@ const imgs = document.querySelectorAll('.img-select a');
 const imgBtns = [...imgs];
 let imgId = 1;
 
+const nextButton = document.getElementById('nextButton');
+const prevButton = document.getElementById('prevButton');
+
 imgBtns.forEach((imgItem) => {
     imgItem.addEventListener('click', (event) => {
         event.preventDefault();
         imgId = imgItem.dataset.id;
+        highlightSelectedImage();
         slideImage();
     });
 });
 
-function slideImage(){
+nextButton.addEventListener('click', () => {
+    imgId = (imgId % 4) + 1; // Vai para a próxima imagem
+    highlightSelectedImage();
+    slideImage();
+});
+
+prevButton.addEventListener('click', () => {
+    imgId = (imgId - 2 + 4) % 4 + 1; // Volta para a imagem anterior
+    highlightSelectedImage();
+    slideImage();
+});
+
+function highlightSelectedImage() {
+    imgBtns.forEach((imgItem) => {
+        imgItem.parentNode.classList.remove('selected'); // Remova a classe 'selected' dos contêineres dos itens
+    });
+    imgBtns[imgId - 1].parentNode.classList.add('selected'); // Adicione a classe 'selected' ao contêiner do item selecionado
+}
+
+function slideImage() {
     const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
-    
+
     document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
 }
 
 window.addEventListener('resize', slideImage);
+
+// Destaque a imagem selecionada inicialmente
+highlightSelectedImage();
+
 /*Imagem seleção*/

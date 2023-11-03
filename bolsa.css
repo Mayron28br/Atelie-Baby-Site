@@ -105,16 +105,48 @@ main{
     gap: 10px;
     margin: 20px;
 }
+
+
 .img-item{
     margin: 0.3rem;
+    border: 2px solid var(--cor-primaria); 
+    border-radius: 10px;
 }
 .img-item:nth-child(1),
 .img-item:nth-child(2),
 .img-item:nth-child(3){
     margin-right: 0;
 }
-.img-item:hover{
+.img-item:hover {
     opacity: 0.8;
+    border: 2px solid var(--cor-secundaria);
+}
+
+.img-item.selected { 
+    border-color: var(--cor-secundaria);
+}
+
+.Botao-anterior {
+    color: var(--cor-primaria);
+    background-color: transparent;
+    border: none;
+    font-size: 80px;
+    cursor: pointer;
+    position: relative;
+    top: -420px;
+    right: 30px;
+    z-index: 10;
+}
+.botao-proximo {
+    color: var(--cor-primaria);
+    background-color: transparent;
+    border: none;
+    font-size: 80px;
+    cursor: pointer;
+    position: relative;
+    top: -420px;
+    left: 425px;
+    z-index: 10;
 }
 
 /*Fim imagens*/
