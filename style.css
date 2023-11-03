@@ -540,19 +540,19 @@ section.show-carrinho .carrinho-aba{
     max-width: 1200px;
     margin: 20px auto;
     padding: 5%;
-
+    font-family: 'Rubik', sans-serif;
+    text-align: center
 }
 
 .titulo-texto-t3{
-    font-size: 62px;
-    font-weight: 800;
-    text-align: center;
+    font-size: 44px;
+    font-weight: 600;
+    color: var(--cor-secundaria);
 }
 
 .texto3-p1{
-    font-size: 34px;
+    font-size: 38px;
     font-weight: 500;
-    text-align: center;
 }
 
 /*FIM texto 3*/

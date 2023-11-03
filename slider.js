@@ -1,7 +1,7 @@
 let swiperCards = new Swiper('.card-content', {
     loop: true,
     spaceBetween: 32,
-    sliderPerView: 'auto',
+    slidesPerView: 'auto',
     centeredSlides: true,
     
     pagination: {
