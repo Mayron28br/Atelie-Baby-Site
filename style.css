@@ -260,7 +260,6 @@ section.show-carrinho .carrinho-aba{
     position: relative;
     top: -190px;
     overflow: hidden;
-    border: 1px solid #ccc;
 }
 .icon {
     color: #ffafcc;
