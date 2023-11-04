@@ -24,6 +24,7 @@
     justify-content: center;
     align-items: center;
     flex: 1;
+    height: 100%;
 }
 
 .centralizados a {
@@ -134,10 +135,19 @@
     .toggle {
         display: none;
     }
+    .accordion {
+        display: none;
+    }
 }
 @media only screen and (max-width: 600px) {
     .swiper {
         height: 30vh;
         margin-top: -440px;
+    }
+    .toggle {
+        display: block;
+    }
+    .modal-content {
+        align-items: center;
     }
 }

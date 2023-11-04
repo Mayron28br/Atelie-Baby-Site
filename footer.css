@@ -201,6 +201,13 @@ footer .boxs {
   footer.card .button2 {
   align-self: center;
   }
+  .boxs {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    text-align: center; /* Alinha o texto no centro */
+  }
 }
 
 /*FIM Footer*/
