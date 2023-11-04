@@ -30,60 +30,75 @@ body {
 
 /*Codigos CSS Universais*/
 
-/*Antigo Carrinho
-main {
-    background-color: #fff;
-    padding: 150px 30px;
-}
-
-main .tlt {
-    background-color: #ffafcc;
-    font-size: 40px;
-    padding: 50px;
-    text-align: center;
-}
-
-main .content {
+.carrinho-titulo {
     display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; 
+    font-size: 24px;
+    border-bottom: 1px solid #000;
 }
 
-main .section {
-    flex: 1;
-}
-
-main .aside {
-    background-color: #afffd0;
-}
-*/
-
-/*Carrinho*/
-.carrinho2 {
-    width: 400px;
-    height: min-content;
-    background: var(--cor-terciaria);
-    padding: 35px;
-}
-
-.carrinho2 .cabecalho {
+.carrinho-container{
     display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.carrinho2 .cabecalho button {
+.carrinho-lista-produtos{
+    display: grid;
+    max-width: 800px;
+    grid-template-rows: 100px;
+    border-bottom: 1px solid #808080;
+}
+
+.carrinho-lista-produtos-titulo{
+    display: grid;
+    grid-template-columns: 350px 250px 200px;
+    align-items: center;
+    font-size: 14px;
+    border-bottom: 1px solid #808080;
+}
+
+.carrinho-produto{
+    display: grid;
+    grid-template-columns: 100px 250px 250px 200px;
+    align-items: center;
+    margin: 5px;
+}
+
+.imagem-produto {
+    grid-column: 1;
+    width: 100%;
+}
+.nome-produto {
+    margin: 20px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.preço-produto{
+    font-size: 20px;
+}
+
+.quantidade-produto span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: var(--cor-primaria);
+    color: #000;
+    border-radius: 5px;
     cursor: pointer;
-    width: 40px;
-    height: 40px;
-    font-size: 2rem;
-    line-height: 50%;
-    color: var(--cor-primaria);
-    background: #ddddde50;
-    border: 2px solid #ddddde50;
-    border-radius: 8px;
-    transition: .4s;
+    text-align: center;
+    line-height: 30px;
 }
 
-.carrinho2 .cabecalho button:hover {
-    color: var(--cor-fundo);
-    background: var(--cor-secundaria);
-    border-color: var(--cor-primaria);
+.quantidade-produto span:nth-child(2) {
+    background-color: transparent;
+    font-size: 20px;
 }
-/*FIM Carrinho*/
+
+.carrinho-checkout{
+    max-width: 400px;
+    margin: 0;
+}
