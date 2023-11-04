@@ -270,7 +270,26 @@ section.show-carrinho .carrinho-aba{
     margin-left: 80px;
     border-radius: 20px;
 }
-
+@media only screen and (max-width: 600px) {
+    .produtos {
+        flex-wrap: wrap;
+    }
+    .produtos-filtro {
+        border: 1px solid #ccc; /* Adicione uma borda */
+        border-radius: 5px; /* Arredonde as bordas */
+        padding: 20px; /* Adicione preenchimento para afastar o conteúdo da borda */
+        background-color: #f9f9f9; /* Escolha uma cor de fundo */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicione uma sombra */
+        margin: 0;
+        background-color: var(--cor-primaria);
+    }
+    .Produtos-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas com largura igual */
+        grid-gap: 10px; /* Espaçamento entre os itens */
+/*possivel troca;  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); / gap: 20px; */
+    }
+}
 /*FIM Produtos*/
 
 /*Filtros */
