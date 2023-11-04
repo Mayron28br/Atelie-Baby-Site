@@ -79,10 +79,12 @@
     padding: 2px;
 }
 
+/* Estilos para telas menores (max-width: 600px) */
 @media only screen and (max-width: 600px) {
     .logo-container {
         display: none;
     }
+
     /* Estilos para o modal */
     .modal {
         display: none;
@@ -103,6 +105,7 @@
         border: 1px solid var(--cor-secundaria);
         border-radius: 5px;
         width: 70%;
+        align-items: center; /* Centraliza o conteúdo */
     }
 
     .close {
@@ -111,23 +114,41 @@
         right: 0;
         padding: 10px;
         cursor: pointer;
-    }   
-
-/* Outros estilos */
-/* Estilos para as barras e botões */
-    .bar {
-        border: 1px solid var(--cor-fundo);
-        margin: 5px;
-        padding: 10px;
-        border-radius: 5px;
     }
 
     .toggle {
         background-color: var(--cor-secundaria);
         padding: 5px 10px;
         cursor: pointer;
+        display: block; /* Garante que o botão seja visível */
+    }
+
+    .swiper {
+        height: 30vh;
+        margin-top: -440px;
+    }
+    /* Estilize o ícone do menu hamburguer */
+    .menu-icon {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px; /* Largura desejada do ícone */
+        height: 20px; /* Altura desejada do ícone */
+    }
+
+    .bar {
+        width: 100%;
+        height: 4px; /* Altura das barrinhas */
+        background-color: #333; /* Cor das barrinhas */
+        border-radius: 2px; /* Bordas arredondadas */
+    }
+    .entrar-carrinho-container {
+        margin-top: 20px;
     }
 }
+
+/* Estilos para telas maiores (min-width: 769px) */
 @media only screen and (min-width: 769px) {
     .close {
         display: none;
@@ -137,17 +158,5 @@
     }
     .accordion {
         display: none;
-    }
-}
-@media only screen and (max-width: 600px) {
-    .swiper {
-        height: 30vh;
-        margin-top: -440px;
-    }
-    .toggle {
-        display: block;
-    }
-    .modal-content {
-        align-items: center;
     }
 }
