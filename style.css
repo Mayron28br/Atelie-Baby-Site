@@ -556,7 +556,12 @@ section.show-carrinho .carrinho-aba{
 }
 
 /*FIM texto 3*/
-
+/*imagens para Celular*/
+@media only screen and (max-width: 600px) {
+    .imagems-personalizaçao .aparecer {
+        display: none;
+    }
+}
 /*Botao Topo*/
 
 #botaotopo {
