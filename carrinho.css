@@ -67,8 +67,8 @@ body {
     grid-template-columns: 100px 250px 250px 200px;
     grid-template-rows: 100px;
     align-items: center;
-    margin: 5px;
     border-bottom: 1px solid #000;
+    padding: 8px;
 }
 
 .imagem-produto {
@@ -116,6 +116,7 @@ body {
     box-shadow: 0 0 20px 0 darkgray;
     margin-left: 30px;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .titulo-checkout{
