@@ -4,7 +4,7 @@
         "name": "Bolsa Mala G",
         "descriçao": "essa é a descrição",
         "price": 200,
-        "imagem": "Place Holder.jpg",
+        "imagem": "Mala G.jpeg",
         "link": "bolsa.html",
         "type": "bolsa"
     },
@@ -24,7 +24,7 @@
         "price": 100,
         "imagem": "Place Holder.jpg",
         "link": "bolsa.html",
-        "type": "acessorio"
+        "type": "bolsa"
     },
     {
         "id": 4,
@@ -52,5 +52,41 @@
         "imagem": "Place Holder.jpg",
         "link": "bolsa.html",
         "type": "kit"
+    },
+    {
+        "id": 7,
+        "name": "Kit 2 peças",
+        "descriçao": "essa é a descrição",
+        "price": 300,
+        "imagem": "kit 2 peças.jpeg",
+        "link": "bolsa.html",
+        "type": "kit"
+    },
+    {
+        "id": 8,
+        "name": "Kit 4 peças",
+        "descriçao": "essa é a descrição",
+        "price": 300,
+        "imagem": "Place Holder.jpg",
+        "link": "bolsa.html",
+        "type": "kit"
+    },
+    {
+        "id": 9,
+        "name": "Bolsa Mala M",
+        "descriçao": "essa é a descrição",
+        "price": 300,
+        "imagem": "Place Holder.jpg",
+        "link": "bolsa.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 10,
+        "name": "Mala Quadrada",
+        "descriçao": "essa é a descrição",
+        "price": 300,
+        "imagem": "Place Holder.jpg",
+        "link": "bolsa.html",
+        "type": "bolsa"
     }
 ]

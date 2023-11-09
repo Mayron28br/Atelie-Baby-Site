@@ -23,6 +23,8 @@ closeCart.addEventListener('click', () => {
 /* Adicionar Card Produto */
 const addDataToHTML = () => {
     listProductHTML.innerHTML = '';
+    listProduct.sort((a, b) => a.name.localeCompare(b.name));
+
     if (listProduct.length > 0) {
         listProduct.forEach(product => {
             if(selectedTypes.length === 0 || selectedTypes.includes(product.type.toLowerCase())){
