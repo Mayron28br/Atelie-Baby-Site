@@ -264,7 +264,7 @@ section.show-carrinho .carrinho-aba{
 
 .produtos-filtro {
     min-width: 300px;
-    height: auto;
+    height: fit-content;
     background-color: var(--cor-primaria);
     margin: 30px;
     margin-left: 80px;
