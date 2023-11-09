@@ -766,6 +766,36 @@ main{
         padding: 75px;
     }
    }
+   @media screen and (max-width: 500px){
+    .titulo{
+        font-size: 20px;
+    }
+    .descriçao-link{
+        margin-top: 10px;
+    }
+    .box-dias{
+        max-width: 50px;
+        padding: 10px;
+    }
+    .container-preço{
+        padding: 75px;
+    }
+   }
+   @media screen and (max-width: 557px){
+    .titulo{
+        font-size: 23px;
+    }
+    .descriçao-link{
+        margin-top: 10px;
+    }
+    .box-dias{
+        max-width: 50px;
+        padding: 10px;
+    }
+    .container-preço{
+        padding: 75px;
+    }
+   }
    
 /*Text*/
 .card-produto-text-title {
