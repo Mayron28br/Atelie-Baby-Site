@@ -3,10 +3,11 @@
 let iconCartHTML = document.querySelector('.carrinho');
 let closeCart = document.querySelector('.carrinho-botao-fechar');
 let section = document.querySelector('section');
-let listProductHTML = document.querySelector('.Produtos-container');
+let listProductHTML = document.querySelector('.Produtos-container.show');
 let listCartHTML = document.querySelector('.carrinho-lista');
 let iconCartSpan = document.querySelector('.numero-itens-carrinho');
 
+let selectedTypes = [];
 let listProduct = [];
 let carts = [];
 
@@ -24,13 +25,15 @@ const addDataToHTML = () => {
     listProductHTML.innerHTML = '';
     if (listProduct.length > 0) {
         listProduct.forEach(product => {
+            if(selectedTypes.length === 0 || selectedTypes.includes(product.type.toLowerCase())){
             let newProduct = document.createElement('div');
             newProduct.classList.add('card-produto');
+            newProduct.classList.add(product.type.toLowerCase());
             newProduct.dataset.id = product.id;
             newProduct.innerHTML = `
-                <div class="card-produto-img"><img src="${product.imagem}"></div>
+                <div class="card-produto-img"><a href="${product.link}"><img src="${product.imagem}"></a></div>
                 <div class="card-produto-info">
-                    <a href="bolsa.html" class="card-produto-text-title">${product.name}</a>
+                    <a href="${product.link}" class="card-produto-text-title">${product.name}</a>
                     <p class="card-produto-text-body">${product.descriçao}</p>
                 </div>
                 <div class="card-produto-footer">
@@ -41,9 +44,24 @@ const addDataToHTML = () => {
                 </div>
             `;
             listProductHTML.appendChild(newProduct);
+            }
         });
     }
 };
+
+// Suponha que seus checkboxes tenham IDs como 'acessorio', 'bolsa', 'kit'
+const typeCheckboxes = document.querySelectorAll('input[type="checkbox"][name="type"]');
+
+typeCheckboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', () => {
+        selectedTypes = Array.from(typeCheckboxes)
+            .filter(checkbox => checkbox.checked)
+            .map(checkbox => checkbox.value);
+
+        addDataToHTML();
+    });
+});
+
 
 listProductHTML.addEventListener('click', (event) => {
     let positonClick = event.target;
