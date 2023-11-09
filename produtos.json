@@ -4,41 +4,53 @@
         "name": "Bolsa Mala G",
         "descriçao": "essa é a descrição",
         "price": 200,
-        "imagem": "Place Holder.jpg"
+        "imagem": "Place Holder.jpg",
+        "link": "bolsa.html",
+        "type": "bolsa"
     },
     {
         "id": 2,
         "name": "Trocador",
         "descriçao": "essa é a descrição",
         "price": 40,
-        "imagem": "Place Holder.jpg"
+        "imagem": "Place Holder.jpg",
+        "link": "bolsa.html",
+        "type": "acessorio"
     },
     {
         "id": 3,
         "name": "Mochila",
         "descriçao": "essa é a descrição",
         "price": 100,
-        "imagem": "Place Holder.jpg"
+        "imagem": "Place Holder.jpg",
+        "link": "bolsa.html",
+        "type": "acessorio"
     },
     {
         "id": 4,
         "name": "Porta Chupeta",
         "descriçao": "essa é a descrição",
         "price": 300,
-        "imagem": "Place Holder.jpg"
+        "imagem": "Place Holder.jpg",
+        "link": "bolsa.html",
+        "type": "acessorio"
     },
     {
         "id": 5,
         "name": "Porta Documento",
         "descriçao": "essa é a descrição",
         "price": 300,
-        "imagem": "Place Holder.jpg"
+        "imagem": "Place Holder.jpg",
+        "link": "bolsa.html",
+        "type": "acessorio"
     },
     {
         "id": 6,
         "name": "Kit 3 peças",
         "descriçao": "essa é a descrição",
         "price": 300,
-        "imagem": "Place Holder.jpg"
+        "imagem": "Place Holder.jpg",
+        "link": "bolsa.html",
+        "type": "kit"
     }
 ]

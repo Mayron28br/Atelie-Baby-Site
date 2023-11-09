@@ -281,6 +281,7 @@ section.show-carrinho .carrinho-aba{
     margin: 30px;
     margin-left: 80px;
     border-radius: 20px;
+    padding: 20px;
 }
 @media only screen and (max-width: 600px) {
     .produtos {
