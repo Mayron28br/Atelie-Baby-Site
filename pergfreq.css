@@ -38,6 +38,7 @@ body {
     /* Add more styling as needed */
 }
 
+
 section {
     width: 60%;
     max-width: 600px;
@@ -76,9 +77,39 @@ section details p {
     padding: 2%;
 }
 
+
+
 section details[open] {
-    background: var(--cor-terciaria);
     padding: 6px;
     border-radius: 4px;
     margin-bottom: 15px;
 }
+
+section details {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+section summary {
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+section details p {
+    background-color: #f0f0f0;
+    padding: 16px;
+    margin: 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+section details[open] summary {
+    background: var(--cor-primaria);
+    color: #fff;
+}
+
+section details[open] p {
+    display: block;
+}
+
