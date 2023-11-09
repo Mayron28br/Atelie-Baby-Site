@@ -742,6 +742,9 @@ main{
         max-width: 100%;
         max-height: 100%;
     }
+    body{
+        overflow-x: hidden;
+    }
    }
    @media screen and (max-width: 853px){
     .titulo{
