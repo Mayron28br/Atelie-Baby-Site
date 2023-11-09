@@ -627,7 +627,7 @@ main{
     font-size: 24px;
     font-weight: bold;
     text-align: center;
-    margin: 30px;
+    margin: auto;
 }
 
 .linhas-centralizadas {
@@ -705,6 +705,51 @@ main{
     align-items: center;
     padding-top: 10px;
     border-top: 1px solid #ddd;
+   }
+   @media screen and (max-width: 768px){
+    .outros-produtos{
+        margin-top: 330px;
+    }
+    .container-top{
+        flex-wrap: wrap;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        gap: 10px;
+        justify-content: center;
+    }
+    .lado-direito{
+        margin-right: 175px;
+    }
+    .lado-esquerdo{
+        max-width: 450px;
+        margin-left: 50px;
+        overflow: scroll;
+    }
+    .titulo{
+        font-size: 30px;
+    }
+    .descriçao-link{
+        margin-top: 50px;
+    }
+    .box-dias{
+        max-width: 100px;
+    }
+    .swiper-pagination{
+        position: relative;
+        top: 0px;
+    }
+    .img-showcase{
+        position: relative;
+        max-width: 100%;
+        max-height: 100%;
+    }
+   }
+   @media screen and (max-width: 853px){
+    .titulo{
+        font-size: 25px;
+    }
+    .descriçao-link{
+        margin-top: 10px;
+    }
    }
    
 /*Text*/
@@ -886,13 +931,14 @@ main{
     z-index: 99;
     border: none;
     outline: none;
-    border: 2px solid var(--cor-fundo);
+    border: 2px solid var(--cor-secundaria);
     cursor: pointer;
     padding: 15px;
     width: 50px;
     height: 50px;
     border-radius: 10%;
-    background-image: url('botao.jpg');
+    background-image: url('botao.svg');
+    background-color: var(--cor-primaria);
     background-size: cover;
     background-position: center;
     transition: all 0.3s;
