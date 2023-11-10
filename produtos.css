@@ -308,6 +308,19 @@ section.show-carrinho .carrinho-aba{
     gap: 10px;
 }
 
+input[type="checkbox"]{
+    margin-right: 5px;
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+label{
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 600px) {
     .produtos {
         flex-wrap: wrap;
