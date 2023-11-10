@@ -1,0 +1,177 @@
+/*Carrinho*/
+
+.carrinho-aba{
+    width: 450px;
+    height: 300px;
+    margin-top: 100px;
+    margin-right: 10px;
+    background-color: #f8f9fa;
+    color: #000;
+    position: fixed;
+    inset: 0 0 0 auto;
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    z-index: 999;
+    transition: 0.5s;
+    border-radius: 20px;
+    border-color: #000;
+}
+
+section.show-carrinho .carrinho-aba{
+    inset: 0 -480px 0 auto;
+}
+
+
+
+.carrinho-titulo{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+
+/*Items Carrinho*/
+
+.carrinho-aba .carrinho-lista .items img{
+    width: 100%;
+}
+
+.carrinho-aba .carrinho-lista .items{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.carrinho-lista .quantidade-item span{
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    background-color: var(--cor-fundo);
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carrinho-lista .quantidade-item span:nth-child(2){
+    background-color: transparent;
+    color: var(--cor-secundaria);
+    cursor: default;
+}
+
+.carrinho-lista .items:nth-child(even){
+    background-color: var(--cor-primaria);
+}
+
+.carrinho-lista{
+    margin-top: 80px;
+    overflow: auto;
+    margin-bottom: 50px;
+}
+
+.carrinho-lista::-webkit-scrollbar{
+    width: 0;
+}
+
+/*FIM Items Carrinho*/
+
+/*Botão Fechar Carrinho*/
+
+.carrinho-botao-fechar{
+    position: absolute;
+    padding: 5px 10px;
+    margin: 20px;
+    top: 0;
+    right: 0;
+    border-radius: 5px;
+    background-color: var(--cor-fundo);
+    color: #CED4DA;
+    border-color: #e9ecef;    
+    cursor: pointer;
+}
+
+.carrinho-botao-fechar:hover{
+    background-color: #f8f9fa;
+}
+
+/*FIM Botão Fechar Carrinho*/
+
+/*Botão Carrinho Finalizar Compra*/
+
+.carrinho-botao-comprar {
+    width: 430px;
+    height: 30px;
+    margin-bottom: 10px;
+    background: var(--cor-secundaria);
+    position: absolute;
+    text-align: center;
+    border-radius: 15px;
+    font-family: "Arial";
+    transition: background 0.3s;
+    right: 10px;
+    bottom: 0;
+    cursor: pointer;
+}
+  
+.carrinho-botao-comprar::after,.carrinho-botao-comprar::before {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+  
+.texto-carrinho-botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.carrinho-botao-comprar-wrapper,.texto-carrinho-botao,.icon-carrinho {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #fff;
+}
+  
+.texto-carrinho-botao {
+    top: 0
+}
+  
+.texto-carrinho-botao,.icon-carrinho {
+    transition: top 0.5s;
+}
+  
+.icon-carrinho {
+    color: #fff;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-carrinho-botao {
+    font-size: 20px;
+    color: var(--cor-fundo);
+}
+  
+.carrinho-botao-comprar:hover {
+    background: #ffafcc;
+}
+  
+.carrinho-botao-comprar:hover .texto-carrinho-botao {
+    top: -100%;
+}
+  
+.carrinho-botao-comprar:hover .icon-carrinho {
+    top: 0;
+}
+  
+.carrinho-botao-comprar:hover:before,.carrinho-botao-comprar:hover:after {
+    opacity: 1;
+    visibility: visible;
+}
+  
+/*FIM Botão Carrinho Finalizar Compra*/
+
+/*FIM Carrinho*/

@@ -1,0 +1,202 @@
+/*Codigos CSS Universais*/
+@charset "UTF=8";
+@import url('Header.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+/*
+font-family: 'Dancing Script', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif;
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-primaria: #bde0fe;
+    --cor-secundaria: #ffafcc;
+    --cor-fundo: #fff;
+}
+
+body {
+    min-height: 100.vh;
+    background: var(--cor-fundo);
+    width: 100%;
+    height: 100vh;
+    font-family: Roboto;
+}
+
+/*Codigos CSS Universais*/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  color: white;
+  background-color: #ffffff;
+}
+
+.titulo {
+  color: black;
+  text-align: center;
+  margin: 0;
+  text-decoration: none;
+  font-size: 36px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+.imagem img {
+  max-width: 100%;
+  height: auto;
+}
+
+.imagem {
+    width: 500px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+@media only screen and (max-width: 600px){
+  body{
+    flex-direction: column;
+    width: 100%;
+  }
+  header{
+    position: relative;
+  }
+  /*tamanho da imagen*/
+  .imagem{
+    max-width: 100%;
+    height: auto;
+  }
+  .container{
+    max-width: 100%;
+    height: auto;
+  }
+  .container{
+    margin-bottom: 30px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+.container {
+  background-color: none;
+  padding: 6px;
+  width: 350px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 darkgrey;
+}
+
+form {
+  position: absolute;
+  margin-top: 80px;
+  transition: .5s;
+  width: 300px;
+  height: 400px;
+}
+
+.buttonsForm {
+  margin-top: 40px;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 0 0 7px 0 #cdb4db;
+}
+
+.buttonsForm button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  position: relative;
+  padding: 10px 32px;
+}
+
+.btnColor {
+  position: absolute;
+  width: 108px;
+  height: 100%;
+  background: linear-gradient(to right, #ffc8dd, #bde0fe);
+  border-radius: 30px;
+  transition: .3s;
+}
+
+input[type="text"], input[type="password"] {
+  border: none;
+  margin-top: 40px;
+  border-radius: 60px;
+  padding: 8px 0 8px 35px;
+  outline: none;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+button[type="submit"] {
+  background: #ffafcc;
+  color: white;
+  border-radius: 30px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 0 8px 15px;
+  font-size: 15px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.divCheck {
+  margin: 10px 0 0 5px;
+  width: 80%;
+  font-size: 13px;
+}
+
+#signin {
+  left: 25px;
+}
+
+#signup {
+  left: 450px;
+}
+
+i {
+  position: absolute;
+  left: 0;
+  padding: 10px 10px;
+}
+
+.iEmail {
+  top: 40px;
+}
+
+.iPassword {
+  top: 114px;
+}
+
+.iPassword2 {
+  top: 192px;
+}
