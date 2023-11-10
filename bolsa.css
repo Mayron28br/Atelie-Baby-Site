@@ -327,27 +327,29 @@ main{
 /*FIM Tabela popup parcelamento*/
 
 /*Botão comprar*/
-.comprar {
+.botao-comprar {
     width: fit-content;
-    min-width: 100px;
+    min-width: 400px;
     height: 45px;
     padding: 8px;
-    border-radius: 5px;
-    border: 2.5px solid #000;
+    border-radius: 30px;
+    border: 2.5px solid var(--cor-secundaria);
     box-shadow: 0px 0px 20px -20px;
     cursor: pointer;
-    background-color: #ffafcc;
+    background-color: var(--cor-secundaria);
     transition: all 0.2s ease-in-out 0ms;
     user-select: none;
-    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--cor-fundo);
   }
   
-  .comprar:hover {
+  .botao-comprar:hover {
     background-color: #ffc8dd;
     box-shadow: 0px 0px 20px -18px;
   }
   
-  .comprar:active {
+  .botao-comprar:active {
     transform: scale(0.95);
   }
 /*FIM botão comprar*/
@@ -418,33 +420,27 @@ main{
 }
 
 .btn{
-    border: 1px solid #000000;
+    border: 1.5px solid #000;
     background: none;
     padding: 10px 20px;
-    font-size: 15x;
+    font-size: 14px;
     font-weight: 500;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Roboto', sans-serif;
     cursor: pointer;
     margin: 10px;
+    min-width: 100px;
+    max-width: 100px;
     color: #000000;
     transition: 0.8s;
     position: relative;
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 /*cor do nome*/
-.btn1:hover{
-    color: white;
+.btn:hover{
+    color: var(--cor-fundo);
 }
-.btn2:hover{
-    color: pink;
-}
-.btn3:hover{
-    color: purple;
-}
-.btn4:hover{
-    color: red;
-}
+
 
 .btn::before{
     content: "";
@@ -458,23 +454,38 @@ main{
 }
 /*Cor do Fundo*/
 .btn1::before{
-    background: black;
+    background: #faedcd;
 }
 .btn2::before{
-    background: rgb(62, 194, 10);
+    background: #000;
 }
 .btn3::before{
-    background: pink;
+    background: #023e8a;
 }
 .btn4::before{
+    background: #7f5539;
+}
+.btn5::before{
+    background: #ffafcc;
+}
+.btn6::before{
+    background: #a2d2ff;
+}
+.btn7::before{
+    background: #adb5bd;
+}
+.btn8::before{
+    background: #f29ca3;
+}
+.btn9::before{
     background: yellow;
 }
 
-.btn1::before,.btn2::before,.btn3::before,.btn4::before{
+.btn::before{
     bottom: 0;
     border-radius: 50% 50% 0 0;
 }
-.btn1:hover::before,.btn2:hover::before,.btn3:hover::before,.btn4:hover::before{
+.btn:hover::before{
     height: 180%;
 }
 
@@ -885,6 +896,15 @@ main{
     .card-content{
         overflow: hidden;
     }
+
+    .Botao-anterior{
+        top: -340px;
+        right: -30px;
+    }
+    .botao-proximo{
+        top: -340px;
+        left: 300px;
+    }
   }
   
 
@@ -899,6 +919,16 @@ main{
     .swiper-button-prev {
       display: block;
     }
+
+    .Botao-anterior{
+        top: -340px;
+        right: -30px;
+    }
+
+    .botao-proximo{
+        top: -340px;
+        left: 300px;
+    }
   }
 
 /*Para telas grandes*/
@@ -912,6 +942,16 @@ main{
     }
     .swiper-button-next {
       right: -1rem;
+    }
+
+    .Botao-anterior{
+        top: -420px;
+        right: 30px;
+    }
+
+    .botao-proximo{
+        top: -420px;
+        left: 430px;
     }
   }
 

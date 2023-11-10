@@ -77,9 +77,9 @@ prevButton.addEventListener('click', () => {
 
 function highlightSelectedImage() {
     imgBtns.forEach((imgItem) => {
-        imgItem.parentNode.classList.remove('selected'); // Remova a classe 'selected' dos contêineres dos itens
+        imgItem.parentNode.classList.remove('selected');
     });
-    imgBtns[imgId - 1].parentNode.classList.add('selected'); // Adicione a classe 'selected' ao contêiner do item selecionado
+    imgBtns[imgId - 1].parentNode.classList.add('selected'); 
 }
 
 function slideImage() {
