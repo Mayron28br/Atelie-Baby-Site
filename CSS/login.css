@@ -194,9 +194,21 @@ i {
 }
 
 .iPassword {
-  top: 114px;
+  top: 115px;
 }
 
 .iPassword2 {
-  top: 192px;
+  top: 191px;
+}
+
+.container a{
+  position: absolute;
+  visibility: hidden;
+}
+
+.container.error input{
+  border-color: red;
+}
+.container.error a{
+  border-color: red;
 }
