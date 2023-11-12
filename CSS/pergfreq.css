@@ -1,12 +1,11 @@
 /*Codigos CSS Universais*/
 @charset "UTF=8";
-@import url('Header.css');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Solway:wght@300;400;500;700;800&display=swap');
 /*
-font-family: 'Dancing Script', cursive;
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Rubik', sans-serif;
+font-family: 'Solway', serif;
 */
 * {
     margin: 0;
@@ -46,6 +45,8 @@ section {
 }
 
 section h1 {
+    font-family: 'Solway', serif;
+    color: var(--cor-secundaria);
     padding: 2%;
 }
 
@@ -55,15 +56,15 @@ section details {
 }
 
 section details summary {
-    background: var(--cor-secundaria);
+    background: var(--cor-primaria);
     padding: 2%;
     border-bottom: 2px solid #282828;
     font-weight: 600px;
-    border-radius: 5%;
+    border-radius: 10px;
 }
 
 section a {
-    color: #fff;
+    color: green;
     text-decoration: none;
 }
 
@@ -74,7 +75,8 @@ section a:hover {
 section details p {
     background-color: #282828;
     color: #f9f9f9;
-    padding: 2%;
+    padding: 10px;
+    color: #000;
 }
 
 
@@ -101,12 +103,13 @@ section details p {
     background-color: #f0f0f0;
     padding: 16px;
     margin: 0;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 2px solid #e0e0e0;
 }
 
 section details[open] summary {
-    background: var(--cor-primaria);
+    background: var(--cor-secundaria);
     color: #fff;
+    border-radius: 10px 10px 0 0;
 }
 
 section details[open] p {
