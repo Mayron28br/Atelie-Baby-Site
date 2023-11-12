@@ -2,45 +2,45 @@
     {
         "id": 1,
         "name": "Mala G",
-        "descriçao": "essa é a descrição",
+        "description": "essa é a descrição",
         "price": 120,
-        "imagem": "Mala G.jpeg",
+        "image": "Mala G.jpeg",
         "link": "bolsa-g.html",
         "type": "bolsa"
     },
     {
         "id": 2,
         "name": "Mala M",
-        "descriçao": "essa é a descrição",
+        "description": "essa é a descrição",
         "price": 80,
-        "imagem": "Mala G.jpeg",
+        "image": "Mala G.jpeg",
         "link": "bolsa-m.html",
         "type": "bolsa"
     },
     {
         "id": 3,
         "name": "Mochila",
-        "descriçao": "essa é a descrição",
+        "description": "essa é a descrição",
         "price": 120,
-        "imagem": "Place Holder.jpg",
+        "image": "Place Holder.jpg",
         "link": "mochila.html",
         "type": "bolsa"
     },
     {
         "id": 4,
         "name": "Mala Quadrada",
-        "descriçao": "essa é a descrição",
+        "description": "essa é a descrição",
         "price": 80,
-        "imagem": "Place Holder.jpg",
+        "image": "Place Holder.jpg",
         "link": "mala-quadrada.html",
         "type": "bolsa"
     },
     {
         "id": 5,
         "name": "Frasqueira",
-        "descriçao": "essa é a descrição",
+        "description": "essa é a descrição",
         "price": 80,
-        "imagem": "Place Holder.jpg",
+        "image": "Place Holder.jpg",
         "link": "frasqueira.html",
         "type": "bolsa"
     }

@@ -33,13 +33,13 @@ const addDataToHTML = () => {
             newProduct.classList.add(product.type.toLowerCase());
             newProduct.dataset.id = product.id;
             newProduct.innerHTML = `
-                <div class="card-produto-img"><a href="${product.link}"><img src="${product.imagem}"></a></div>
+                <div class="card-produto-img"><a href="${product.link}"><img src="${product.image}"></a></div>
                 <div class="card-produto-info">
                     <a href="${product.link}" class="card-produto-text-title">${product.name}</a>
-                    <p class="card-produto-text-body">${product.descriçao}</p>
+                    <p class="card-produto-text-body">${product.description}</p>
                 </div>
                 <div class="card-produto-footer">
-                    <span class="card-produto-text-title">R$ ${product.price}</span>
+                    <span class="card-produto-text-title">R$ ${product.price},00</span>
                     <div class="card-produto-button">
                         <svg class="svg-icon" viewBox="0 0 20 20"><i class="fa-solid fa-cart-shopping"></i></svg>
                     </div>
@@ -111,7 +111,7 @@ const addCartHTML = () => {
 
             newCart.innerHTML = `
                 <div class="imagem-item">
-                    <img src="${info.imagem}">
+                    <img src="${info.image}">
                 </div>
                 <div class="name-item">${info.name}</div>
                 <div class="preço-total-item">R$ ${info.price * cart.quantity}</div>
