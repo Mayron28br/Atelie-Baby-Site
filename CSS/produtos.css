@@ -295,10 +295,8 @@ label{
         border: 1px solid #ccc; /* Adicione uma borda */
         border-radius: 5px; /* Arredonde as bordas */
         padding: 20px; /* Adicione preenchimento para afastar o conteúdo da borda */
-        background-color: #f9f9f9; /* Escolha uma cor de fundo */
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicione uma sombra */
         margin: 0;
-        background-color: var(--cor-primaria);
     }
     .Produtos-container {
         display: grid;
@@ -315,11 +313,13 @@ label{
     max-width: 300px;
     min-width: 300px;
     height: fit-content;
-    background-color: var(--cor-primaria);
     margin: 30px;
     margin-left: 80px;
     border-radius: 20px;
     padding: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 darkgray;
 }
 
 .produto-filtro-titulo{
@@ -333,6 +333,8 @@ label{
     font-family:  'Solway', serif;
     font-size: 22px;
     margin: 20px 0 10px 0;
+    font-weight: 500;
+    color: var(--cor-secundaria);
 }
 
 .categorias-opçoes{
@@ -344,6 +346,13 @@ label{
 }
 
 /*preço filtro*/
+.produto-filtro-titulo-preço{
+    font-family:  'Solway', serif;
+    font-size: 22px;
+    margin: 20px 0 0 0;
+    font-weight: 500;
+    color: var(--cor-secundaria);
+}
 
 .price-input{
     width: 100%;
@@ -385,7 +394,7 @@ input[type="number"]::-webkit-inner-spin-button{
 .slider-price-input{
     height: 5px;
     border-radius: 5px;
-    background-color: var(--cor-fundo);
+    background-color: #CED4DA;
     position: relative;
 }
 

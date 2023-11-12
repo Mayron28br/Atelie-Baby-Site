@@ -100,6 +100,10 @@ const addCartToMemory = () => {
 const addCartHTML = () => {
     listCartHTML.innerHTML = '';
     let totalQuantity = 0;
+
+    if (listProduct.length === 0) {
+        listProduct = data;
+    }
     
     if (carts.length > 0) {
         carts.forEach(cart => {
