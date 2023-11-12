@@ -1,12 +1,11 @@
 /*Codigos CSS Universais*/
 @charset "UTF=8";
-@import url('Header.css');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Solway:wght@300;400;500;700;800&display=swap');
 /*
-font-family: 'Dancing Script', cursive;
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Rubik', sans-serif;
+font-family: 'Solway', serif;
 */
 * {
     margin: 0;
@@ -409,7 +408,7 @@ main{
 .titulo-tecido{
     text-align: center;
     font-size: 25px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Solway', serif;
     font-weight: 500;
 }
 
@@ -478,7 +477,25 @@ main{
     background: #f29ca3;
 }
 .btn9::before{
-    background: yellow;
+    background: #4f772d;
+}
+.btn10::before{
+    background: #5b2a86;
+}
+.btn11::before{
+    background: #8a5a44;
+}
+.btn12::before{
+    background: #432818;
+}
+.btn13::before{
+    background: #ef7a85;
+}
+.btn14::before{
+    background: #588157;
+}
+.btn15::before{
+    background: #132a13;
 }
 
 .btn::before{
@@ -494,7 +511,7 @@ main{
 .titulo-fita{
     text-align: center;
     font-size: 25px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Solway', serif;
     font-weight: 500;
 }
 
@@ -511,7 +528,7 @@ main{
 .titulo-nome{
     text-align: center;
     font-size: 25px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Solway', serif;
     font-weight: 500;
     margin: 10px;
 }
@@ -543,7 +560,7 @@ main{
 .titulo-bordado{
     text-align: center;
     font-size: 25px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Solway', serif;
     font-weight: 500;
 }
 
@@ -639,6 +656,7 @@ main{
     font-weight: bold;
     text-align: center;
     margin: auto;
+    font-family: 'Solway', serif;
 }
 
 .linhas-centralizadas {
