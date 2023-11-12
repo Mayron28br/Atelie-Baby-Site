@@ -46,8 +46,8 @@ section {
 
 section h1 {
     font-family: 'Solway', serif;
-    color: var(--cor-secundaria);
     padding: 2%;
+    font-size: 28px;
 }
 
 section details {
