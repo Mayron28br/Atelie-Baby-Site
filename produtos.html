@@ -79,7 +79,7 @@
 
     <section class="produtos-filtro">
         <h2 class="produto-filtro-titulo">Filtros</h2>
-        <form>
+        <form id="categoria">
             <p class="produto-filtro-titulo-categorias">Categorias:</p>
             <div class="categorias-opçoes">
                 <label for="acessorio"><input type="checkbox" id="acessorio" name="type" value="acessorio">Acessório</label>
@@ -87,6 +87,25 @@
                 <label for="kit"><input type="checkbox" id="kit" name="type" value="kit">Kit</label>
             </div>
         </form>
+
+        <div class="price-input">
+            <div class="field">
+                <span>Mínimo</span>
+                <input type="number" class="input-min" value="0">
+            </div>
+            <div class="separador">-</div>
+            <div class="field">
+                <span>Máximo</span>
+                <input type="number" class="input-max" value="1500">
+            </div>
+        </div>
+        <div class="slider-price-input">
+            <div class="progress"></div>
+        </div>
+        <div class="range-input">
+            <input type="range" class="range-min" min="0" max="1500" value="0">
+            <input type="range" class="range-max" min="0" max="1500" value="1500">
+        </div>
     </section>
     
 
@@ -108,8 +127,8 @@
             
         </section>
 
-        <script src="JavaScript/config.js"></script>
         <script src="JavaScript/carrinho popup.js"></script>
+        <script src="JavaScript/produtos.js"></script>
     </main>
 
     <!--Footer-->

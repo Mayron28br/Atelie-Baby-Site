@@ -43,5 +43,50 @@
         "image": "Place Holder.jpg",
         "link": "frasqueira.html",
         "type": "bolsa"
+    },
+    {
+        "id": 6,
+        "name": "Trocador",
+        "description": "essa é a descrição",
+        "price": 40,
+        "image": "Place Holder.jpg",
+        "link": "trocador.html",
+        "type": "acessorio"
+    },
+    {
+        "id": 7,
+        "name": "Porta Documentos",
+        "description": "essa é a descrição",
+        "price": 40,
+        "image": "Place Holder.jpg",
+        "link": "porta-doc.html",
+        "type": "acessorio"
+    },
+    {
+        "id": 8,
+        "name": "Necesser",
+        "description": "essa é a descrição",
+        "price": 40,
+        "image": "Place Holder.jpg",
+        "link": "necesser.html",
+        "type": "acessorio"
+    },
+    {
+        "id": 9,
+        "name": "Saquinho de Troca",
+        "description": "essa é a descrição",
+        "price": 25,
+        "image": "Place Holder.jpg",
+        "link": "saquinho.html",
+        "type": "acessorio"
+    },
+    {
+        "id": 10,
+        "name": "Porta Chupeta",
+        "description": "essa é a descrição",
+        "price": 25,
+        "image": "Place Holder.jpg",
+        "link": "porta-chupeta.html",
+        "type": "acessorio"
     }
 ]

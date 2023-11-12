@@ -364,11 +364,62 @@ label{
     outline: none;
     text-align: center;
     font-size: 19px;
-    margin-left: 12px;
+    margin-left: 10px;
     border-radius: 5px;
     border: 1px solid #999;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.price-input .separador{
+    font-size: 20px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-price-input{
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--cor-fundo);
+    position: relative;
+}
+
+.slider-price-input .progress{
+    height: 5px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    border-radius: 5px;
+    background-color: var(--cor-secundaria);
+}
+
+.range-input{
+    position: relative;
+}
+
+.range-input input{
+    position: absolute;
+    top: -5px;
+    height: 5px;
+    width: 100%;
+    pointer-events: none;
+    background: none;
+    -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    background-color: var(--cor-secundaria);
+}
 /*FIM preço filtro*/
 
 /*FIM Filtros*/
