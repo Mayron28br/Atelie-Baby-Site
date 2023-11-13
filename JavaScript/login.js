@@ -1,5 +1,5 @@
-var formSignin = document.querySelector('#signin')
-var formSignup = document.querySelector('#signup')
+var formSignin = document.querySelector('#signin-form')
+var formSignup = document.querySelector('#signup-form')
 var btnColor = document.querySelector('.btnColor')
 var container = document.querySelector(' .container')
 
@@ -19,22 +19,68 @@ document.querySelector('#btnSignup')
     container.style.height = "550px"
 })
 
-const form = document.getElementById("signin, signup")
-const email = document.getElementById("email")
-const password = document.getElementById("password")
-const passwordConfirmation = document.getElementById("password-confirmation")
-const check = document.getElementById("check")
+const validations = {
+  validateEmail: (email, errorId) => {
+      const emailValue = email.value;
+      const errorElement = document.getElementById(errorId);
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+      if (!emailValue || !emailValue.includes("@")) {
+          errorElement.innerText = "Email inválido.";
+          errorElement.style.visibility = "visible";
+          return false;
+      } else {
+          errorElement.style.visibility = "hidden";
+          return true;
+      }
+  },
 
-  alert("CADASTRADO COM SUCESSO")
-})
+  validatePassword: (password, errorId) => {
+      const passwordValue = password.value;
+      const errorElement = document.getElementById(errorId);
 
-function checkInputEmail(){
-  const emailvalue = email.value;
+      if (!passwordValue || passwordValue.length < 6) {
+          errorElement.innerText = "A senha deve ter no mínimo 6 caracteres.";
+          errorElement.style.visibility = "visible";
+          return false;
+      } else {
+          errorElement.style.visibility = "hidden";
+          return true;
+      }
+  },
 
-  if(emailvalue === ""){
-    errorInput(email, "o email é obrigatório.")
+  validatePasswordConfirmation: (password, confirm, errorId) => {
+      const passwordValue = password.value;
+      const confirmValue = confirm.value;
+      const errorElement = document.getElementById(errorId);
+
+      if (passwordValue !== confirmValue) {
+          errorElement.innerText = "As senhas não são iguais.";
+          errorElement.style.visibility = "visible";
+          return false;
+      } else {
+          errorElement.style.visibility = "hidden";
+          return true;
+      }
   }
-}
+};
+
+document.getElementById("signin-form").addEventListener("submit", (event) => {
+  event.preventDefault();
+  const emailSignin = document.getElementById("email-signin");
+  const passwordSignin = document.getElementById("password-signin");
+  const emailError = "email-signin-error";
+  const passwordError = "password-signin-error";
+
+  if (emailSignin && passwordSignin) {
+      const emailSigninValid = validations.validateEmail(emailSignin, emailError);
+      const passwordSigninValid = validations.validatePassword(passwordSignin, passwordError);
+
+      if (emailSigninValid && passwordSigninValid) {
+          alert("Login realizado com sucesso!");
+      } else {
+          alert("Por favor, preencha os campos corretamente.");
+      }
+  } else {
+      alert("Elementos não encontrados!");
+  }
+});

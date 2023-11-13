@@ -20,42 +20,43 @@
 
   <div class="container">
     <div class="buttonsForm">
-      <div class="btnColor"></div>
-      <button id="btnSignin">Login</button>
-      <button id="btnSignup">Registro</button>
+        <div class="btnColor"></div>
+        <button id="btnSignin">Login</button>
+        <button id="btnSignup">Registro</button>
     </div>
 
-    <form id="signin">
-      <input type="text" placeholder="Email" id="email" required />
-        <a>Aqui vai a mensagem...</a>
-      <i class="fas fa-envelope iEmail"></i>
-      <input type="password" placeholder="Senha" id="password" required />
-        <a>Aqui vai a mensagem...</a>
-      <i class="fas fa-lock iPassword"></i>
-      <div class="divCheck">
-        <input type="checkbox" id="check" />
-        <span>Lembrar a senha</span>
-      </div>
-      <button type="submit">Entrar</button>
+    <form id="signin-form">
+        <input type="email" placeholder="Email" id="email-signin" required />
+        <a class="error-message" id="email-signin-error">Aqui vai a mensagem...</a>
+        <i class="fas fa-envelope iEmail"></i>
+        <input type="password" placeholder="Senha" id="password-signin" required />
+        <a class="error-message" id="email-signin-error">Aqui vai a mensagem...</a>
+        <i class="fas fa-lock iPassword"></i>
+        <div class="divCheck">
+            <input type="checkbox" id="check-signin" />
+            <span>Lembrar a senha</span>
+        </div>
+        <button type="submit">Entrar</button>
     </form>
 
-    <form id="signup">
-      <input type="text" placeholder="Email" id="email" required />
-        <a>Aqui vai a mensagem...</a>
-      <i class="fas fa-envelope iEmail"></i>
-      <input type="password" placeholder="Senha" id="password" required />
-        <a>Aqui vai a mensagem...</a>
-      <i class="fas fa-lock iPassword"></i>
-      <input type="password" placeholder="Confirmar senha" id="password-confirmation" required />
-        <a>Aqui vai a mensagem...</a>
-      <i class="fas fa-lock iPassword2"></i>
-      <div class="divCheck">
-        <input type="checkbox" id="check"required />
-        <span>Aceitar termos</span>
-      </div>
-      <button type="submit">Registrar</button>
+    <form id="signup-form">
+        <input type="email" placeholder="Email" id="email-signup" required />
+        <a class="error-message" id="email-signup-error">Aqui vai a mensagem...</a>
+        <i class="fas fa-envelope iEmail"></i>
+        <input type="password" placeholder="Senha" id="password-signup" required />
+        <a class="error-message" id="email-signup-error">Aqui vai a mensagem...</a>
+        <i class="fas fa-lock iPassword"></i>
+        <input type="password" placeholder="Confirmar senha" id="password-confirmation-signup" required />
+        <a class="error-message" id="email-signup-error">Aqui vai a mensagem...</a>
+        <i class="fas fa-lock iPassword2"></i>
+        <div class="divCheck">
+            <input type="checkbox" id="check-signup" required />
+            <span>Aceitar termos</span>
+        </div>
+        <button type="submit">Registrar</button>
     </form>
-  </div>
+</div>
+
 
   <script src="JavaScript/login.js"></script>
 </body>

@@ -145,7 +145,7 @@ form {
   transition: .3s;
 }
 
-input[type="text"], input[type="password"] {
+input[type="email"], input[type="password"] {
   border: none;
   margin-top: 40px;
   border-radius: 60px;
@@ -174,11 +174,11 @@ button[type="submit"] {
   font-size: 13px;
 }
 
-#signin {
+#signin-form {
   left: 25px;
 }
 
-#signup {
+#signup-form {
   left: 450px;
 }
 
@@ -200,14 +200,24 @@ i {
   top: 191px;
 }
 
-.container a{
+.error-message {
   position: absolute;
   visibility: hidden;
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
 }
 
-.container.error input{
+.containerForm.error input {
   border-color: red;
 }
-.container.error a{
-  border-color: red;
+
+.containerForm.error .email-signup-error,
+.containerForm.error .password-signup-error,
+.containerForm.error .password-confirmation-signup-error,
+.containerForm.error .check-signup-error,
+.containerForm.error .email-signin-error,
+.containerForm.error .password-signin-error
+.containerForm.error .error-message {
+  visibility: visible;
 }
