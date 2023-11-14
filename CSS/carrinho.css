@@ -51,15 +51,6 @@ body {
     display: grid;
     max-width: 800px;
     height: fit-content;
-    grid-template-rows: 100px;
-}
-
-.carrinho-lista-produtos-titulo{
-    display: grid;
-    grid-template-columns: 350px 250px 200px;
-    align-items: center;
-    font-size: 14px;
-    border-bottom: 1px solid #000;
 }
 
 .carrinho-produto{

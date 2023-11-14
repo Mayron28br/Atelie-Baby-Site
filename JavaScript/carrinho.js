@@ -1,6 +1,6 @@
 /*carrinho*/
 
-let listCartHTML = document.querySelector('.carrinho-lista');
+let listCartHTML = document.querySelector('.carrinho-lista-produtos');
 let iconCartSpan = document.querySelector('.numero-itens-carrinho');
 let iconCartHTML = document.querySelector('.carrinho');
 
@@ -19,23 +19,21 @@ const addCartHTML = () => {
         carts.forEach(cart => {
             totalQuantity += cart.quantity;
             let newCart = document.createElement('div');
-            newCart.classList.add('items');
+            newCart.classList.add('carrinho-produto');
             newCart.dataset.id = cart.product_id;
             let positionProduct = listProduct.findIndex((value) => value.id == cart.product_id);
             let info = listProduct[positionProduct];
 
             if(info){
             newCart.innerHTML = `
-                <div class="imagem-item">
-                    <img src="${info.image}">
-                </div>
-                <div class="name-item">${info.name}</div>
-                <div class="preço-total-item">R$ ${info.price * cart.quantity}</div>
-                <div class="quantidade-item">
-                    <span class="minus">-</span>
-                    <span class="quantity">${cart.quantity}</span>
-                    <span class="plus">+</span>
-                </div>
+            <img class="imagem-produto" src="${info.image}">
+            <p class="nome-produto">"${info.name}</p>
+            <p class="preço-produto"> ${info.price * cart.quantity},00</p>
+            <div class="quantidade-produto">
+                <span class="minus">-</span>
+                <span class="quantity">${cart.quantity}</span>
+                <span class="plus">+</span>
+            </div>
             `;
             listCartHTML.appendChild(newCart);
             }
