@@ -21,18 +21,28 @@ closeCart.addEventListener('click', () => {
 });
 
 /* Adicionar Card Produto */
+// ... (código anterior)
+
+/* Adicionar Card Produto com Filtragem por Preço */
 const addDataToHTML = () => {
     listProductHTML.innerHTML = '';
     listProduct.sort((a, b) => a.name.localeCompare(b.name));
 
+    const minVal = parseInt(rangeInput[0].value);
+    const maxVal = parseInt(rangeInput[1].value);
+
     if (listProduct.length > 0) {
         listProduct.forEach(product => {
-            if(selectedTypes.length === 0 || selectedTypes.includes(product.type.toLowerCase())){
-            let newProduct = document.createElement('div');
-            newProduct.classList.add('card-produto');
-            newProduct.classList.add(product.type.toLowerCase());
-            newProduct.dataset.id = product.id;
-            newProduct.innerHTML = `
+            if (
+                (selectedTypes.length === 0 || selectedTypes.includes(product.type.toLowerCase())) &&
+                product.price >= minVal &&
+                product.price <= maxVal
+            ) {
+                let newProduct = document.createElement('div');
+                newProduct.classList.add('card-produto');
+                newProduct.classList.add(product.type.toLowerCase());
+                newProduct.dataset.id = product.id;
+                newProduct.innerHTML = `
                 <div class="card-produto-img"><a href="${product.link}"><img src="${product.image}"></a></div>
                 <div class="card-produto-info">
                     <a href="${product.link}" class="card-produto-text-title">${product.name}</a>
@@ -44,8 +54,8 @@ const addDataToHTML = () => {
                         <svg class="svg-icon" viewBox="0 0 20 20"><i class="fa-solid fa-cart-shopping"></i></svg>
                     </div>
                 </div>
-            `;
-            listProductHTML.appendChild(newProduct);
+                `;
+                listProductHTML.appendChild(newProduct);
             }
         });
     }

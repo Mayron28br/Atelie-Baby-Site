@@ -42,3 +42,33 @@ rangeInput.forEach(input => {
 
     });
 });
+
+// Suponha que você tenha uma lista de itens como esta
+const listaDeItens = [
+    { nome: 'Item 1', preco: 500 },
+    { nome: 'Item 2', preco: 1000 },
+    { nome: 'Item 3', preco: 1500 },
+    // ... mais itens
+];
+
+function filtrarItensPorPreco(min, max) {
+    // Use a função filter para obter apenas os itens dentro do intervalo de preços
+    const itensFiltrados = listaDeItens.filter(item => item.preco >= min && item.preco <= max);
+
+    // Agora você pode fazer algo com os itens filtrados, como exibi-los na página
+    console.log(itensFiltrados);
+}
+
+// Chame esta função quando os valores de preço forem alterados
+function atualizarFiltroDePreco() {
+    const minVal = parseInt(rangeInput[0].value);
+    const maxVal = parseInt(rangeInput[1].value);
+
+    // Chame a função de filtragem com os valores atuais do intervalo de preços
+    filtrarItensPorPreco(minVal, maxVal);
+}
+
+// Adicione este trecho ao seu código para chamar a função quando os valores de preço mudarem
+rangeInput.forEach(input => {
+    input.addEventListener("input", atualizarFiltroDePreco);
+});
