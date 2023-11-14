@@ -1,5 +1,4 @@
 /*Carrinho*/
-
 .carrinho-aba{
     width: 450px;
     height: 300px;
@@ -21,8 +20,6 @@ section.show-carrinho .carrinho-aba{
     inset: 0 -480px 0 auto;
 }
 
-
-
 .carrinho-titulo{
     padding: 20px;
     margin: 0;
@@ -33,6 +30,8 @@ section.show-carrinho .carrinho-aba{
 
 .carrinho-aba .carrinho-lista .items img{
     width: 100%;
+    margin-top: 4px;
+    margin-left: 4px;
 }
 
 .carrinho-aba .carrinho-lista .items{

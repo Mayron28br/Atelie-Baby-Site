@@ -1,14 +1,13 @@
+/*carrinho*/
+
 let listCartHTML = document.querySelector('.carrinho-lista');
 let iconCartSpan = document.querySelector('.numero-itens-carrinho');
 let iconCartHTML = document.querySelector('.carrinho');
 let closeCart = document.querySelector('.carrinho-botao-fechar');
 let section = document.querySelector('section');
 
-
-
 var carts = []
 var listProduct = [];
-
 
 /* Mostrar e fechar Carrinho popup */
 iconCartHTML.addEventListener('mouseenter', () => {
@@ -18,62 +17,6 @@ iconCartHTML.addEventListener('mouseenter', () => {
 closeCart.addEventListener('click', () => {
     section.classList.toggle('show-carrinho');
 });
-
-const swiper = new Swiper('.swiper', {
-    autoplay: {
-    delay: 5000,
-    disableOnInteraction: false
-    },
-    loop: true,
-    
-    pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    },
-    
-    navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-    },
-    
-    });
-
-/*Botao Topo*/
-
-function checkScrollPosition() {
-    var botaotopo = document.getElementById("botaotopo");
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        botaotopo.classList.add("active");
-    } else {
-        botaotopo.classList.remove("active");
-    }
-}
-
-window.onscroll = function() {
-    checkScrollPosition();
-}
-
-function subirbotao() {
-    var duration = 1000;
-    var interval = 10;
-
-    var scrollStep = -window.scrollY / (duration / interval);
-
-    var scrollInterval = setInterval(function() {
-        if (window.scrollY !== 0) {
-            window.scrollBy(0, scrollStep);
-        } else {
-            clearInterval(scrollInterval);
-        }
-    }, interval);
-}
-document.getElementById("botaotopo").addEventListener("click", function() {
-    subirbotao();
-});
-
-/*FIM Botao Topo*/
-
-/*carrinho*/
 
 const addCartHTML = () => {
     listCartHTML.innerHTML = '';
@@ -130,6 +73,56 @@ const addCartHTML = () => {
     });
 };
 
+const removeCartFromMemory = () => {
+    localStorage.removeItem('cart');
+};
+
+
+const changeQuantity = (product_id, type) => {
+    let positionItemInCart = carts.findIndex((value) => value.product_id == product_id);
+    if (positionItemInCart >= 0) {
+        let info = carts[positionItemInCart];
+        switch (type) {
+            case 'plus':
+                carts[positionItemInCart].quantity = carts[positionItemInCart].quantity + 1;
+                break;
+
+            case 'minus':
+                let changeQuantity = carts[positionItemInCart].quantity - 1;
+                if (changeQuantity > 0) {
+                    carts[positionItemInCart].quantity = changeQuantity;
+                } else {
+                    carts.splice(positionItemInCart, 1);
+                }
+                break;
+        }
+    }
+    addCartHTML();
+    
+    if (carts.length === 0) {
+        // Se o carrinho está vazio, remova os dados da memória
+        removeCartFromMemory();
+    } else {
+        // Caso contrário, atualize os dados da memória
+        addCartToMemory();
+    }
+};
+
+const addCartToMemory = () => {
+    localStorage.setItem('cart', JSON.stringify(carts));
+};
+
+const getCartsFromMemory = () => {
+    const local = localStorage.getItem('cart');
+    const parse = JSON.parse(local);
+    
+    if (parse) {
+        carts = parse;
+    }
+};
+
+getCartsFromMemory();
+
 const initapp = () => {
 
     // get data from json
@@ -156,7 +149,60 @@ const initapp = () => {
 
 initapp();
 
-
 /*FIM Carrinho*/
+
+const swiper = new Swiper('.swiper', {
+    autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+    },
+    loop: true,
+    
+    pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    },
+    
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+    
+    });
+
+/*Botao Topo*/
+
+function checkScrollPosition() {
+    var botaotopo = document.getElementById("botaotopo");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        botaotopo.classList.add("active");
+    } else {
+        botaotopo.classList.remove("active");
+    }
+}
+
+window.onscroll = function() {
+    checkScrollPosition();
+}
+
+function subirbotao() {
+    var duration = 1000;
+    var interval = 10;
+
+    var scrollStep = -window.scrollY / (duration / interval);
+
+    var scrollInterval = setInterval(function() {
+        if (window.scrollY !== 0) {
+            window.scrollBy(0, scrollStep);
+        } else {
+            clearInterval(scrollInterval);
+        }
+    }, interval);
+}
+document.getElementById("botaotopo").addEventListener("click", function() {
+    subirbotao();
+});
+
+/*FIM Botao Topo*/
 
 
