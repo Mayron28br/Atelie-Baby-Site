@@ -4,7 +4,7 @@
         "name": "Mala G",
         "description": "essa é a descrição",
         "price": 120,
-        "image": "Mala G.jpeg",
+        "image": "img/mala-g.png",
         "link": "bolsa-g.html",
         "type": "bolsa"
     },
@@ -13,7 +13,7 @@
         "name": "Mala M",
         "description": "essa é a descrição",
         "price": 80,
-        "image": "Mala G.jpeg",
+        "image": "img/mala-g.png",
         "link": "bolsa-m.html",
         "type": "bolsa"
     },
@@ -22,7 +22,7 @@
         "name": "Mochila",
         "description": "essa é a descrição",
         "price": 120,
-        "image": "Place Holder.jpg",
+        "image": "img/mochila.png",
         "link": "mochila.html",
         "type": "bolsa"
     },
@@ -31,7 +31,7 @@
         "name": "Mala Quadrada",
         "description": "essa é a descrição",
         "price": 80,
-        "image": "Place Holder.jpg",
+        "image": "img/mala-quadrada.png",
         "link": "mala-quadrada.html",
         "type": "bolsa"
     },
@@ -40,7 +40,7 @@
         "name": "Frasqueira",
         "description": "essa é a descrição",
         "price": 80,
-        "image": "Place Holder.jpg",
+        "image": "img/frasqueira.jpeg",
         "link": "frasqueira.html",
         "type": "bolsa"
     },
@@ -49,7 +49,7 @@
         "name": "Trocador",
         "description": "essa é a descrição",
         "price": 40,
-        "image": "Place Holder.jpg",
+        "image": "img/trocador.jpeg",
         "link": "trocador.html",
         "type": "acessorio"
     },
@@ -67,7 +67,7 @@
         "name": "Necesser",
         "description": "essa é a descrição",
         "price": 40,
-        "image": "Place Holder.jpg",
+        "image": "img/necesser.png",
         "link": "necesser.html",
         "type": "acessorio"
     },
@@ -76,7 +76,7 @@
         "name": "Saquinho de Troca",
         "description": "essa é a descrição",
         "price": 25,
-        "image": "Place Holder.jpg",
+        "image": "img/saquinho.jpeg",
         "link": "saquinho.html",
         "type": "acessorio"
     },
@@ -88,5 +88,32 @@
         "image": "Place Holder.jpg",
         "link": "porta-chupeta.html",
         "type": "acessorio"
+    },
+    {
+        "id": 11,
+        "name": "kit 3 peças",
+        "description": "essa é a descrição",
+        "price": 450,
+        "image": "img/kit-3-peças.png",
+        "link": "bolsa.html",
+        "type": "kit"
+    },
+    {
+        "id": 12,
+        "name": "kit 5 peças",
+        "description": "essa é a descrição",
+        "price": 450,
+        "image": "img/kit-5-peças.jpeg",
+        "link": "bolsa.html",
+        "type": "kit"
+    },
+    {
+        "id": 13,
+        "name": "kit 2 peças",
+        "description": "essa é a descrição",
+        "price": 450,
+        "image": "img/kit-2-peças.jpeg",
+        "link": "bolsa.html",
+        "type": "kit"
     }
 ]

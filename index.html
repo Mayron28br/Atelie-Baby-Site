@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/style.css"/>
     <link rel="stylesheet" href="CSS/header-footer.css"/>
     <link rel="stylesheet" href="CSS/galeria.css"/>
+    <link rel="stylesheet" href="CSS/carrinho-popup.css">
     <script src="JavaScript/header.js"></script>
     <script src="JavaScript/header.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -52,26 +53,26 @@
     </header>    
 
 
-    <section class="show-carrinho">
+    <section class="show-carrinho" onload="initapp()">
         <div class="carrinho-aba">
             <h1 class="carrinho-titulo">Carrinho</h1>
             <div class="carrinho-lista">
                 <div class="item">
-                    
                 </div>
             </div>
     
             <button class="carrinho-botao-fechar">X</button>
     
             <div class="carrinho-botao-comprar">
+                <a href="carrinho.html">
                 <div class="carrinho-botao-comprar-wrapper">
                     <div class="texto-carrinho-botao">Finalizar Compra</div>
-                    <span class="icon-carrinho"> <i class="fa-solid fa-cart-shopping icon-carrinho-botao"></i> </span>
+                    <span class="icon-carrinho"><i class="fa-solid fa-cart-shopping icon-carrinho-botao"></i> </span>
                 </div>
+                </a>
             </div>        
-                    
         </div>
-    </section>
+      </section>
     
 
     <!--Botao Topo-->
@@ -93,7 +94,7 @@
                     <img src="img/slide2.jpg" alt="Slide 2">
                 </div>
                 <div class="swiper-slide">
-                    <img src="img/slide3.jpg" alt="Slide 3">
+                    <img src="img/slide3.png" alt="Slide 3">
                 </div>
                 <div class="swiper-slide">
                     <img src="img/slide4.jpg" alt="Slide 4">
@@ -142,36 +143,36 @@
 
         <div class="container-produtos-favoritos">
             <div class="card-produto hidden" data-id="1" style="--i:0;">
-                <div class="card-produto-img"><a href="bolsa.html"><img src="Mala G.jpeg"></a></div>
+                <div class="card-produto-img"><a href="bolsa.html"><img src="img/kit-3-peças.png"></a></div>
                 <div class="card-produto-info">
-                  <a href="bolsa.html" class="card-produto-text-title">Bolsa Mala G</a>
-                  <p class="card-produto-text-body">Descrição</p>
+                  <a href="bolsa.html" class="card-produto-text-title">Kit 3 peças</a>
+                  <p class="card-produto-text-body">Mala-G, Mala Quadrada, Mochila</p>
                 </div>
                 <div class="card-produto-footer">
-                <span class="card-produto-text-title">R$ 160,00</span>
+                <span class="card-produto-text-title">R$ 650,00</span>
                 <div class="card-produto-button">
                   <svg class="svg-icon" viewBox="0 0 20 20"><i class="fa-solid fa-cart-shopping"></i></svg>
                 </div>
                 </div>
             </div>
             <div class="card-produto hidden" data-id="2" style="--i:1;">
-                <div class="card-produto-img"><img src="Place Holder.jpg"></div>
+                <div class="card-produto-img"><img src="img/mala-g.png"></div>
                 <div class="card-produto-info">
-                  <a href="trocador.html" class="card-produto-text-title">Trocador</a>
+                  <a href="trocador.html" class="card-produto-text-title">Mala G</a>
                   <p class="card-produto-text-body">Descrição</p>
                 </div>
                 <div class="card-produto-footer">
-                <span class="card-produto-text-title">R$ 40,00</span>
+                <span class="card-produto-text-title">R$ 140,00</span>
                 <div class="card-produto-button">
                   <svg class="svg-icon" viewBox="0 0 20 20"><i class="fa-solid fa-cart-shopping"></i></svg>
                 </div>
               </div>
             </div>
             <div class="card-produto hidden" data-id="3" style="--i:2;">
-                <div class="card-produto-img "><img src="Place Holder.jpg"></div>
+                <div class="card-produto-img "><img src="img/mala-quadrada.png"></div>
                 <div class="card-produto-info">
-                  <a href="trocador.html" class="card-produto-text-title">Produto</a>
-                  <p class="card-produto-text-body">Descrição</p>
+                  <a href="trocador.html" class="card-produto-text-title">Mala Quadrada</a>
+                  <p class="card-produto-text-body">Mala Com Bolso Quadradro</p>
                 </div>
                 <div class="card-produto-footer">
                 <span class="card-produto-text-title">R$ 40,00</span>
@@ -181,13 +182,13 @@
               </div>
             </div>
             <div class="card-produto hidden" data-id="4" style="--i:3;">
-                <div class="card-produto-img"><img src="Place Holder.jpg"></div>
+                <div class="card-produto-img"><img src="img/mochila.png"></div>
                 <div class="card-produto-info">
-                  <a href="trocador.html" class="card-produto-text-title">Produto</a>
-                  <p class="card-produto-text-body">Descrição</p>
+                  <a href="trocador.html" class="card-produto-text-title">Mochila</a>
+                  <p class="card-produto-text-body">Mochila Maternidade</p>
                 </div>
                 <div class="card-produto-footer">
-                <span class="card-produto-text-title">R$ 40,00</span>
+                <span class="card-produto-text-title">R$ 80,00</span>
                 <div class="card-produto-button">
                   <svg class="svg-icon" viewBox="0 0 20 20"><i class="fa-solid fa-cart-shopping"></i></svg>
                 </div>
@@ -209,9 +210,9 @@
             <div class="marquee">
               <div class="marquee__group">
                 <img src="Mala G.jpeg" xlink:href="#hulu">
-                  <img src="Place Holder.jpg" xlink:href="#notion">
-                  <img src="Place Holder.jpg" xlink:href="#honda">
-                  <img src="Place Holder.jpg" xlink:href="#burger-king">
+                  <img src="img/kit30.jpeg" xlink:href="#notion">
+                  <img src="img/kit-3-peças.png" xlink:href="#honda">
+                  <img src="img/kit-50.jpeg" xlink:href="#burger-king">
                   <img src="Place Holder.jpg" xlink:href="#spotify">
                   <img src="Place Holder.jpg" xlink:href="#aws">
                   <img src="Place Holder.jpg" xlink:href="#jordan">
@@ -348,5 +349,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="JavaScript/inicio.js"></script>
     <script src="JavaScript/animacoes.js"></script>
+    
 </body>
 </html>
