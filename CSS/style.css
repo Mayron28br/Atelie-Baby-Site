@@ -600,7 +600,7 @@ section.show-carrinho .carrinho-aba{
 
 @media only screen and (max-width: 600px) {
     .mais-informaçoes{
-        margin-top: -200px;
+        margin-top: -270px;
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* 2 colunas com largura igual */
         grid-gap: 10px; /* Espaçamento entre os itens */
