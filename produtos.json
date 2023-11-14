@@ -58,7 +58,7 @@
         "name": "Porta Documentos",
         "description": "essa é a descrição",
         "price": 40,
-        "image": "Place Holder.jpg",
+        "image": "img/48.webp",
         "link": "porta-doc.html",
         "type": "acessorio"
     },
@@ -85,7 +85,7 @@
         "name": "Porta Chupeta",
         "description": "essa é a descrição",
         "price": 25,
-        "image": "Place Holder.jpg",
+        "image": "img/47.jpg",
         "link": "porta-chupeta.html",
         "type": "acessorio"
     },
@@ -115,5 +115,383 @@
         "image": "img/kit-2-peças.jpeg",
         "link": "bolsa.html",
         "type": "kit"
+    },
+    {
+        "id": 14,
+        "name": "Mala G",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/1.webp",
+        "link": "bolsa-g.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 15,
+        "name": "Mala M",
+        "description": "essa é a descrição",
+        "price": 80,
+        "image": "img/2.webp",
+        "link": "bolsa-m.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 16,
+        "name": "Mochila",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/3.webp",
+        "link": "mochila.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 17,
+        "name": "Mala G",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/4.webp",
+        "link": "bolsa-g.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 18,
+        "name": "Mala M",
+        "description": "essa é a descrição",
+        "price": 80,
+        "image": "img/5.webp",
+        "link": "bolsa-m.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 19,
+        "name": "Mochila",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/6.webp",
+        "link": "mochila.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 20,
+        "name": "Mala G",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/7.jpg",
+        "link": "bolsa-g.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 21,
+        "name": "Mala M",
+        "description": "essa é a descrição",
+        "price": 80,
+        "image": "img/8.webp",
+        "link": "bolsa-m.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 22,
+        "name": "Mala G",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/9.jpg",
+        "link": "bolsa-g.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 23,
+        "name": "Mala M",
+        "description": "essa é a descrição",
+        "price": 80,
+        "image": "img/10.webp",
+        "link": "bolsa-m.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 24,
+        "name": "Mochila",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/11.webp",
+        "link": "mochila.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 25,
+        "name": "Mala G",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/12.webp",
+        "link": "bolsa-g.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 26,
+        "name": "Mala M",
+        "description": "essa é a descrição",
+        "price": 80,
+        "image": "img/13.webp",
+        "link": "bolsa-m.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 27,
+        "name": "Mochila",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/14.webp",
+        "link": "mochila.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 28,
+        "name": "Mala G",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/15.webp",
+        "link": "bolsa-g.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 29,
+        "name": "Mala M",
+        "description": "essa é a descrição",
+        "price": 80,
+        "image": "img/16.webp",
+        "link": "bolsa-m.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 30,
+        "name": "Mochila",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/17.webp",
+        "link": "mochila.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 31,
+        "name": "Mala G",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/18.webp",
+        "link": "bolsa-g.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 32,
+        "name": "Mala M",
+        "description": "essa é a descrição",
+        "price": 80,
+        "image": "img/19.webp",
+        "link": "bolsa-m.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 33,
+        "name": "Mochila",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/20.webp",
+        "link": "mochila.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 34,
+        "name": "Mala G",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/21.webp",
+        "link": "bolsa-g.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 35,
+        "name": "Mala M",
+        "description": "essa é a descrição",
+        "price": 80,
+        "image": "img/22.webp",
+        "link": "bolsa-m.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 36,
+        "name": "Mochila",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/23.webp",
+        "link": "mochila.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 37,
+        "name": "Mala G",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/24.webp",
+        "link": "bolsa-g.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 38,
+        "name": "Mala M",
+        "description": "essa é a descrição",
+        "price": 80,
+        "image": "img/25.webp",
+        "link": "bolsa-m.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 39,
+        "name": "Mochila",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/26.webp",
+        "link": "mochila.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 40,
+        "name": "Mala G",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/27.webp",
+        "link": "bolsa-g.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 41,
+        "name": "Mala M",
+        "description": "essa é a descrição",
+        "price": 80,
+        "image": "img/28.webp",
+        "link": "bolsa-m.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 42,
+        "name": "Mochila",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/29.webp",
+        "link": "mochila.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 43,
+        "name": "Mala G",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/30.webp",
+        "link": "bolsa-g.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 44,
+        "name": "Mala M",
+        "description": "essa é a descrição",
+        "price": 80,
+        "image": "img/31.webp",
+        "link": "bolsa-m.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 45,
+        "name": "Mochila",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/32.webp",
+        "link": "mochila.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 46,
+        "name": "Mala G",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/33.webp",
+        "link": "bolsa-g.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 47,
+        "name": "Mala M",
+        "description": "essa é a descrição",
+        "price": 80,
+        "image": "img/34.webp",
+        "link": "bolsa-m.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 48,
+        "name": "Mochila",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/35.webp",
+        "link": "mochila.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 49,
+        "name": "Mala G",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/36.webp",
+        "link": "bolsa-g.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 50,
+        "name": "Mala M",
+        "description": "essa é a descrição",
+        "price": 80,
+        "image": "img/37.webp",
+        "link": "bolsa-m.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 51,
+        "name": "Mochila",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/trocador.jpeg",
+        "link": "mochila.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 52,
+        "name": "Mala G",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/39.webp",
+        "link": "bolsa-g.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 53,
+        "name": "Mala M",
+        "description": "essa é a descrição",
+        "price": 80,
+        "image": "img/40.webp",
+        "link": "bolsa-m.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 54,
+        "name": "Mochila",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/41.webp",
+        "link": "mochila.html",
+        "type": "bolsa"
+    },
+    {
+        "id": 55,
+        "name": "Mala G",
+        "description": "essa é a descrição",
+        "price": 120,
+        "image": "img/42.webp",
+        "link": "bolsa-g.html",
+        "type": "bolsa"
     }
 ]
