@@ -51,6 +51,7 @@ body {
     display: grid;
     max-width: 800px;
     height: fit-content;
+    overflow: hidden;
 }
 
 .carrinho-produto{
@@ -133,7 +134,7 @@ body {
     display: flex;
     justify-content: space-between;
     font-size: 28px;
-    margin-top: 70px;
+    margin-top: 140px;
     padding-bottom: 10px;
     border-bottom: 1px solid #000;
 }

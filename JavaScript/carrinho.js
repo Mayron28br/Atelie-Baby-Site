@@ -7,9 +7,57 @@ let iconCartHTML = document.querySelector('.carrinho');
 var carts = []
 var listProduct = [];
 
+/*Valores Checkout*/
+
+const calcularTotalProdutos = () => {
+    let totalProdutos = 0;
+
+    if (Array.isArray(carts) && carts.length > 0) {
+        carts.forEach(cart => {
+            let positionProduct = listProduct.findIndex((value) => value.id == cart.product_id);
+            let info = listProduct[positionProduct];
+
+            if (info) {
+                totalProdutos += info.price * cart.quantity;
+            }
+        });
+    }
+
+    return totalProdutos;
+};
+
+const calcularFrete = () => {
+    // Lógica para calcular o frete
+    // Pode ser com base na quantidade de itens no carrinho, região do cliente, etc.
+    return 10; // Valor de frete fixo como exemplo
+};
+
+// Função para calcular o valor final, incluindo o frete
+const calcularValorFinal = () => {
+    const totalProdutos = calcularTotalProdutos();
+    const frete = calcularFrete();
+    const valorFinal = totalProdutos + frete;
+
+    return valorFinal;
+};
+/*FIM Valores checkout*/
+
 const addCartHTML = () => {
     listCartHTML.innerHTML = '';
     let totalQuantity = 0;
+
+    const totalProdutos = calcularTotalProdutos();
+    const valorFinal = calcularValorFinal();
+
+    let subtotalHTML = document.querySelector('.total');
+    subtotalHTML.innerText = `R$ ${totalProdutos.toFixed(2)}`;
+
+    let freteHTML = document.querySelector('.frete-checkout p:nth-child(2)');
+    freteHTML.innerText = `R$ ${calcularFrete().toFixed(2)}`;
+
+    let totalHTML = document.querySelector('.total-checkout p:nth-child(2)');
+    totalHTML.innerText = `R$ ${valorFinal.toFixed(2)}`;
+
 
     console.log(carts)
     
@@ -27,7 +75,7 @@ const addCartHTML = () => {
             if(info){
             newCart.innerHTML = `
             <img class="imagem-produto" src="${info.image}">
-            <p class="nome-produto">"${info.name}</p>
+            <p class="nome-produto">${info.name}</p>
             <p class="preço-produto"> ${info.price * cart.quantity},00</p>
             <div class="quantidade-produto">
                 <span class="minus">-</span>
