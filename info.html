@@ -7,6 +7,7 @@
     <!--Links CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="CSS/header-footer.css"/>
+    <link rel="stylesheet" href="CSS/carrinho-popup.css">
     <link rel="stylesheet" href="CSS/pergfreq.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--FIM Links CSS-->
@@ -55,8 +56,28 @@
   <!--Botao Topo-->
   <button id="botaotopo" onclick="subirbotao()"></button>
   <!--FIM Botao Topo-->
+  <section class="show-carrinho">
+    <div class="carrinho-aba">
+        <h1 class="carrinho-titulo">Carrinho</h1>
+        <div class="carrinho-lista">
+            <div class="item">
+            </div>
+        </div>
 
+        <button class="carrinho-botao-fechar">X</button>
+
+        <div class="carrinho-botao-comprar">
+            <a href="carrinho.html">
+            <div class="carrinho-botao-comprar-wrapper">
+                <div class="texto-carrinho-botao">Finalizar Compra</div>
+                <span class="icon-carrinho"><i class="fa-solid fa-cart-shopping icon-carrinho-botao"></i> </span>
+            </div>
+            </a>
+        </div>        
+    </div>
+  </section>
   <!---->
+  <script src="JavaScript/ajuda.js"></script>
     <section>
         <h1>Perguntas Frequentes</h1>
         <details>
