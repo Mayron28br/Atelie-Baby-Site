@@ -146,3 +146,179 @@ function addToCart(productId) {
     // Lógica para adicionar o produto ao carrinho, se necessário
     // ...
 }
+
+
+
+
+// Troca de imagens e conteúdo do produto
+// precisa de manuntenção
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const produtoContainer = document.getElementById('produto-container');
+    const imgSelect = document.querySelector('.img-select');
+  
+    // Mapeie os dados do produto (você pode expandir isso conforme necessário)
+    const produtos = [
+        {
+            "id": 1,
+            "name": "Mala G",
+            "description": "essa é a descrição",
+            "price": 120,
+            "image": "img/mala-g.png",
+            "link": "bolsa-g.html",
+            "type": "bolsa",
+            "customization": ""
+        },
+        {
+            "id": 2,
+            "name": "Mala M",
+            "description": "essa é a descrição",
+            "price": 80,
+            "image": "img/mala-g.png",
+            "link": "bolsa-m.html",
+            "type": "bolsa",
+            "customization": ""
+        },
+        {
+            "id": 3,
+            "name": "Mochila",
+            "description": "essa é a descrição",
+            "price": 120,
+            "image": "img/mochila.png",
+            "link": "mochila.html",
+            "type": "bolsa",
+            "customization": ""
+        },
+        {
+            "id": 4,
+            "name": "Mala Quadrada",
+            "description": "essa é a descrição",
+            "price": 80,
+            "image": "img/mala-quadrada.png",
+            "link": "mala-quadrada.html",
+            "type": "bolsa",
+            "customization": ""
+        },
+        {
+            "id": 5,
+            "name": "Frasqueira",
+            "description": "essa é a descrição",
+            "price": 80,
+            "image": "img/frasqueira.png",
+            "link": "frasqueira.html",
+            "type": "bolsa",
+            "customization": ""
+        },
+        {
+            "id": 6,
+            "name": "Trocador",
+            "description": "essa é a descrição",
+            "price": 40,
+            "image": "img/trocador.jpeg",
+            "link": "trocador.html",
+            "type": "acessorio",
+            "customization": ""
+        },
+        {
+            "id": 7,
+            "name": "Porta Documentos",
+            "description": "essa é a descrição",
+            "price": 40,
+            "image": "img/48.webp",
+            "link": "porta-doc.html",
+            "type": "acessorio",
+            "customization": ""
+        },
+        {
+            "id": 8,
+            "name": "Necesser",
+            "description": "essa é a descrição",
+            "price": 40,
+            "image": "img/necesser.png",
+            "link": "necesser.html",
+            "type": "acessorio",
+            "customization": ""
+        },
+        {
+            "id": 9,
+            "name": "Saquinho de Troca",
+            "description": "essa é a descrição",
+            "price": 25,
+            "image": "img/saquinho.jpeg",
+            "link": "saquinho.html",
+            "type": "acessorio",
+            "customization": ""
+        },
+        {
+            "id": 10,
+            "name": "Porta Chupeta",
+            "description": "essa é a descrição",
+            "price": 25,
+            "image": "img/47.jpg",
+            "link": "porta-chupeta.html",
+            "type": "acessorio"
+        },
+        {
+            "id": 11,
+            "name": "kit 3 peças",
+            "description": "essa é a descrição",
+            "price": 450,
+            "image": "img/kit-3-peças.png",
+            "link": "bolsa.html",
+            "type": "kit",
+            "customization": ""
+        },
+        {
+            "id": 12,
+            "name": "kit 5 peças",
+            "description": "essa é a descrição",
+            "price": 450,
+            "image": "img/kit-5-peças.jpeg",
+            "link": "bolsa.html",
+            "type": "kit",
+            "customization": ""
+        },
+        {
+            "id": 13,
+            "name": "kit 2 peças",
+            "description": "essa é a descrição",
+            "price": 450,
+            "image": "img/kit-2-peças.jpeg",
+            "link": "bolsa.html",
+            "type": "kit",
+            "customization": ""
+        }
+    ];
+  
+    // Função para exibir o conteúdo do produto
+    function exibirProduto(id) {
+      const produtoSelecionado = produtos.find(produto => produto.id == id);
+  
+      if (produtoSelecionado) {
+        const imgShowcase = document.querySelector('.img-showcase');
+        const ladoDireito = document.querySelector('.lado-direito');
+  
+        // Atualiza as imagens
+        imgShowcase.innerHTML = `<img src="${produtoSelecionado.image}">`;
+  
+        // Atualiza o conteúdo à direita
+        ladoDireito.innerHTML = `
+          <h6 class="titulo">${produtoSelecionado.name}<hr></h6>
+          <div class="container-preço">
+            <div class="box-preço">
+              <h1 class="preço">R$ ${produtoSelecionado.price.toFixed(2)}</h1>
+            </div>
+          </div>
+        `;
+      }
+    }
+  
+    // Ouvinte de eventos para a seleção de imagens
+    imgSelect.addEventListener('click', function (event) {
+      event.preventDefault();
+      const idProdutoSelecionado = event.target.closest('a').getAttribute('data-id');
+      exibirProduto(idProdutoSelecionado);
+    });
+  });
+  
