@@ -1,22 +1,51 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ateliê Baby - Clientes</title>
-  <!-- Se necessário, adicione seus estilos aqui -->
+  <title>Clientes</title>
+  <!-- Adicione seus estilos CSS aqui, se necessário -->
 </head>
 <body>
   <header>
-    <a class="titulo" href="index.html">Ateliê Baby</a>
+    <h1>Clientes Registrados</h1>
   </header>
 
-  <div class="clientes-container">
-    <h2>Lista de Clientes Registrados</h2>
-    <ul id="clientes-list"></ul>
+  <div id="client-list">
+    <!-- Aqui você exibirá a lista de clientes -->
   </div>
 
-  <script src="JavaScript/clientes.js"></script>
+  <script>
+    // Recupera a lista de usuários do armazenamento local
+    let users = JSON.parse(localStorage.getItem('registeredUsers')) || [];
+
+    // Seleciona o elemento onde você deseja exibir a lista de clientes
+    const clientListContainer = document.getElementById('client-list');
+
+    // Função para remover um cliente da lista e do armazenamento local
+    const removeClient = (email) => {
+      users = users.filter(user => user.email !== email);
+      localStorage.setItem('registeredUsers', JSON.stringify(users));
+      updateClientList();
+    };
+
+    // Função para atualizar a lista de clientes na página
+    const updateClientList = () => {
+      // Gera o HTML para exibir a lista de clientes
+      const clientListHTML = users.map(user => `
+        <div>
+          <span>${user.email}</span>
+          <button onclick="removeClient('${user.email}')">Remover</button>
+        </div>
+      `).join('');
+
+      // Insere o HTML na página
+      clientListContainer.innerHTML = clientListHTML;
+    };
+
+    // Chama a função de atualização inicial
+    updateClientList();
+  </script>
 </body>
 </html>

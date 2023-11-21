@@ -221,3 +221,29 @@ i {
 .containerForm.error .error-message {
   visibility: visible;
 }
+
+.error-message {
+  position: absolute;
+  visibility: hidden;
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  left: 0;
+  right: 0;
+  margin: 10px;
+  width: fit-content;
+}
+
+#error-message.email-signup-error {
+  top: 40px; /* Ajuste a posição vertical conforme necessário */
+}
+
+#error-message.password-signup-error {
+  top: 115px; /* Ajuste a posição vertical conforme necessário */
+}
+
+#error-message.password-confirmation-signup-error {
+  top: 191px; /* Ajuste a posição vertical conforme necessário */
+}
+
+/* Adicione outras classes de erro conforme necessário */
