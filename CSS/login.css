@@ -103,7 +103,7 @@ body {
   background-color: none;
   padding: 6px;
   width: 350px;
-  height: 450px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -193,11 +193,11 @@ i {
 }
 
 .iPassword {
-  top: 115px;
+  top: 108px;
 }
 
 .iPassword2 {
-  top: 191px;
+  top: 179px;
 }
 
 .error-message {
