@@ -94,3 +94,55 @@ window.addEventListener('resize', slideImage);
 highlightSelectedImage();
 
 /*Imagem seleção*/
+
+/*Personalização*/
+
+const buttonComprar = document.querySelector('.botao-comprar');
+
+buttonComprar.addEventListener('click', () => {
+    // Captura as informações selecionadas
+    const colorCourano = document.querySelector('.cor-tecido button').innerText;
+    const colorFita = document.querySelector('.cor-fita button').innerText;
+    const name = document.querySelector('.nome input').value;
+    const selectedBordado = document.querySelector('input[name="engine"]:checked')?.value;
+
+    // Cria um objeto com as informações de personalização
+    const customizationInfo = {
+        colorCourano,
+        colorFita,
+        name,
+        selectedBordado
+    };
+
+    // Obtém o ID do produto a partir do botão de compra
+    const productId = buttonComprar.dataset.id;
+
+    // Atualiza a propriedade customization no produto correspondente no JSON
+    updateCustomizationInJSON(productId, customizationInfo);
+});
+
+function updateCustomizationInJSON(productId, customizationInfo) {
+    // Obtém os dados do JSON
+    fetch('produtos.json')
+        .then(response => response.json())
+        .then(data => {
+            // Encontra o produto correspondente pelo ID
+            const product = data.find(product => product.id == productId);
+
+            // Atualiza a propriedade customization no produto
+            if (product) {
+                product.customization = JSON.stringify(customizationInfo);
+                
+                // Atualiza os dados no armazenamento local
+                localStorage.setItem('produtos', JSON.stringify(data));
+
+                // Adiciona as informações ao carrinho, se necessário
+                addToCart(productId);
+            }
+        });
+}
+
+function addToCart(productId) {
+    // Lógica para adicionar o produto ao carrinho, se necessário
+    // ...
+}

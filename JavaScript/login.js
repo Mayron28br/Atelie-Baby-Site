@@ -84,3 +84,25 @@ document.getElementById("signin-form").addEventListener("submit", (event) => {
       alert("Elementos não encontrados!");
   }
 });
+
+// ... (seu código atual) ...
+
+function registerUser(email, password) {
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+    const existingUser = users.find(user => user.email === email);
+  
+    if (existingUser) {
+      alert('Este email já está registrado.');
+      return;
+    }
+  
+    const newUser = { email, password };
+    users.push(newUser);
+    localStorage.setItem('users', JSON.stringify(users));
+  
+    // Redirecionar para a página de clientes após o registro
+    window.location.href = 'clientes.html';
+  }
+  
+  // ... (seu código atual) ...
+  

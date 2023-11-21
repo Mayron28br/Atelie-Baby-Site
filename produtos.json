@@ -6,7 +6,8 @@
         "price": 120,
         "image": "img/mala-g.png",
         "link": "bolsa-g.html",
-        "type": "bolsa"
+        "type": "bolsa",
+        "customization": ""
     },
     {
         "id": 2,
@@ -15,7 +16,8 @@
         "price": 80,
         "image": "img/mala-g.png",
         "link": "bolsa-m.html",
-        "type": "bolsa"
+        "type": "bolsa",
+        "customization": ""
     },
     {
         "id": 3,
@@ -24,7 +26,8 @@
         "price": 120,
         "image": "img/mochila.png",
         "link": "mochila.html",
-        "type": "bolsa"
+        "type": "bolsa",
+        "customization": ""
     },
     {
         "id": 4,
@@ -33,7 +36,8 @@
         "price": 80,
         "image": "img/mala-quadrada.png",
         "link": "mala-quadrada.html",
-        "type": "bolsa"
+        "type": "bolsa",
+        "customization": ""
     },
     {
         "id": 5,
@@ -42,7 +46,8 @@
         "price": 80,
         "image": "img/frasqueira.png",
         "link": "frasqueira.html",
-        "type": "bolsa"
+        "type": "bolsa",
+        "customization": ""
     },
     {
         "id": 6,
@@ -51,7 +56,8 @@
         "price": 40,
         "image": "img/trocador.jpeg",
         "link": "trocador.html",
-        "type": "acessorio"
+        "type": "acessorio",
+        "customization": ""
     },
     {
         "id": 7,
@@ -60,7 +66,8 @@
         "price": 40,
         "image": "img/48.webp",
         "link": "porta-doc.html",
-        "type": "acessorio"
+        "type": "acessorio",
+        "customization": ""
     },
     {
         "id": 8,
@@ -69,7 +76,8 @@
         "price": 40,
         "image": "img/necesser.png",
         "link": "necesser.html",
-        "type": "acessorio"
+        "type": "acessorio",
+        "customization": ""
     },
     {
         "id": 9,
@@ -78,7 +86,8 @@
         "price": 25,
         "image": "img/saquinho.jpeg",
         "link": "saquinho.html",
-        "type": "acessorio"
+        "type": "acessorio",
+        "customization": ""
     },
     {
         "id": 10,
@@ -96,7 +105,8 @@
         "price": 450,
         "image": "img/kit-3-peças.png",
         "link": "bolsa.html",
-        "type": "kit"
+        "type": "kit",
+        "customization": ""
     },
     {
         "id": 12,
@@ -105,7 +115,8 @@
         "price": 450,
         "image": "img/kit-5-peças.jpeg",
         "link": "bolsa.html",
-        "type": "kit"
+        "type": "kit",
+        "customization": ""
     },
     {
         "id": 13,
@@ -114,6 +125,7 @@
         "price": 450,
         "image": "img/kit-2-peças.jpeg",
         "link": "bolsa.html",
-        "type": "kit"
+        "type": "kit",
+        "customization": ""
     }
 ]
