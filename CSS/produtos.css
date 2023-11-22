@@ -119,7 +119,8 @@ label{
         border-radius: 5px; /* Arredonde as bordas */
         padding: 20px; /* Adicione preenchimento para afastar o conteúdo da borda */
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicione uma sombra */
-        margin: 0;
+        margin: 10px;
+        margin-left: 0;
     }
     .Produtos-container {
         display: grid;
